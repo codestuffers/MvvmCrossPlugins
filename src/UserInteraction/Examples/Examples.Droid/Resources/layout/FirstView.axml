@@ -4,16 +4,26 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-  <EditText
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:textSize="40dp"
-    local:MvxBind="Text Hello"
-    />
-  <TextView
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:textSize="40dp"
-    local:MvxBind="Text Hello"
-    />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        local:MvxBind="Text AlertMessage" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        local:MvxBind="Text AlertTitle" />
+    <Button
+        android:text="Show Alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        local:MvxBind="Click ShowAlertCommand" />
+    <Button
+        android:text="Show Alert With Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        local:MvxBind="Click ShowAlertWithTitleCommand" />
 </LinearLayout>

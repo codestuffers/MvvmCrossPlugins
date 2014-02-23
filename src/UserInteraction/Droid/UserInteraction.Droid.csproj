@@ -8,14 +8,14 @@
     <ProjectGuid>{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>codestuffers.MvvmCross.UserInteraction.Droid</RootNamespace>
+    <RootNamespace>codestuffers.MvvmCrosPlugins.UserInteraction.Droid</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
-    <AssemblyName>codestuffers.MvvmCross.UserInteraction.Droid</AssemblyName>
-    <TargetFrameworkVersion>v4.3</TargetFrameworkVersion>
+    <AssemblyName>codestuffers.MvvmCrossPlugins.UserInteraction.Droid</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,32 +44,34 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="System.Net">
-      <HintPath>..\..\..\packages\MvvmCross.PortableSupport.3.1.1\lib\MonoAndroid\System.Net.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.PortableSupport.3.1.1\lib\MonoAndroid\System.Net.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows">
-      <HintPath>..\..\..\packages\MvvmCross.PortableSupport.3.1.1\lib\MonoAndroid\System.Windows.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.PortableSupport.3.1.1\lib\MonoAndroid\System.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Serialization">
-      <HintPath>..\..\..\packages\MvvmCross.PortableSupport.3.1.1\lib\MonoAndroid\System.Xml.Serialization.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.PortableSupport.3.1.1\lib\MonoAndroid\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.CrossCore">
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.CrossCore.Droid">
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding">
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding.Droid">
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization">
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="MvxUserInteraction.cs" />
+    <Compile Include="Plugin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -79,4 +81,10 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Core\UserInteraction.Core.csproj">
+      <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
+      <Name>UserInteraction.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

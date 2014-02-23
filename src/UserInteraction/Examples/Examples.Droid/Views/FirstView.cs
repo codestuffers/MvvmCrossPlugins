@@ -2,7 +2,7 @@ using Android.App;
 using Android.OS;
 using Cirrious.MvvmCross.Droid.Views;
 
-namespace Examples.Droid.Views
+namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Droid.Views
 {
     [Activity(Label = "View for FirstViewModel")]
     public class FirstView : MvxActivity

@@ -4,7 +4,7 @@ using Cirrious.MvvmCross.Droid.Platform;
 using Cirrious.MvvmCross.ViewModels;
 using codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core;
 
-namespace Examples.Droid
+namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Droid
 {
     public class Setup : MvxAndroidSetup
     {

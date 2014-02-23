@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UserInteraction/Core/PluginLoader.cs">
+    <Files>
+      <File FileName="UserInteraction/Examples/Examples.Droid/ToDo-MvvmCross/_ Droid UI.txt" Line="1" Column="1" />
+      <File FileName="UserInteraction/Examples/Examples.Droid/Bootstrap/UserInteractionBootstrap.cs" Line="9" Column="1" />
+      <File FileName="UserInteraction/Droid/MvxUserInteraction.cs" Line="17" Column="9" />
+      <File FileName="UserInteraction/Examples/Core/ViewModels/FirstViewModel.cs" Line="1" Column="1" />
+      <File FileName="UserInteraction/Core/PluginLoader.cs" Line="19" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UserInteraction.Examples.Examples.Droid AndroidDeviceId-Debug="200804114c250a4" MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" />
+</Properties>

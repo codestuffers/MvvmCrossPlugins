@@ -8,16 +8,16 @@
     <ProjectGuid>{BF3F7085-407F-484E-8C09-D282AB9DEA05}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Examples.Droid</RootNamespace>
+    <RootNamespace>codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Droid</RootNamespace>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AssemblyName>Examples.Droid</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v4.3</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -84,6 +84,7 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Bootstrap\UserInteractionBootstrap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -91,10 +92,8 @@
     <None Include="packages.config" />
     <None Include="ToDo-MvvmCross\_ Droid UI.txt" />
     <None Include="Properties\AndroidManifest.xml" />
-    <None Include="Properties\MvxBindingAttributes.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\Drawable\splash.png" />
@@ -117,5 +116,8 @@
       <Project>{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}</Project>
       <Name>UserInteraction.Droid</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bootstrap\" />
   </ItemGroup>
 </Project>

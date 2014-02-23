@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserInteraction", "UserInteraction", "{73C5FC4E-0A32-42C4-9DA6-536899B1BA55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{4A72A899-50C1-4A22-909A-AFE7AB1680C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Core", "UserInteraction\Examples\Core\Examples.Core.csproj", "{F0F9C154-6855-410F-99AE-A046EFF40B59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Droid", "UserInteraction\Examples\Examples.Droid\Examples.Droid.csproj", "{BF3F7085-407F-484E-8C09-D282AB9DEA05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInteraction.Core", "UserInteraction\Core\UserInteraction.Core.csproj", "{BB6519DA-DA8F-40E6-8B05-B96887074492}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInteraction.Droid", "UserInteraction\Droid\UserInteraction.Droid.csproj", "{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB6519DA-DA8F-40E6-8B05-B96887074492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB6519DA-DA8F-40E6-8B05-B96887074492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB6519DA-DA8F-40E6-8B05-B96887074492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB6519DA-DA8F-40E6-8B05-B96887074492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3F7085-407F-484E-8C09-D282AB9DEA05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3F7085-407F-484E-8C09-D282AB9DEA05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3F7085-407F-484E-8C09-D282AB9DEA05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3F7085-407F-484E-8C09-D282AB9DEA05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0F9C154-6855-410F-99AE-A046EFF40B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0F9C154-6855-410F-99AE-A046EFF40B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0F9C154-6855-410F-99AE-A046EFF40B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0F9C154-6855-410F-99AE-A046EFF40B59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4A72A899-50C1-4A22-909A-AFE7AB1680C0} = {73C5FC4E-0A32-42C4-9DA6-536899B1BA55}
+		{BB6519DA-DA8F-40E6-8B05-B96887074492} = {73C5FC4E-0A32-42C4-9DA6-536899B1BA55}
+		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD} = {73C5FC4E-0A32-42C4-9DA6-536899B1BA55}
+		{F0F9C154-6855-410F-99AE-A046EFF40B59} = {4A72A899-50C1-4A22-909A-AFE7AB1680C0}
+		{BF3F7085-407F-484E-8C09-D282AB9DEA05} = {4A72A899-50C1-4A22-909A-AFE7AB1680C0}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = UserInteraction\Examples\Examples.Droid\Examples.Droid.csproj
+	EndGlobalSection
+EndGlobal

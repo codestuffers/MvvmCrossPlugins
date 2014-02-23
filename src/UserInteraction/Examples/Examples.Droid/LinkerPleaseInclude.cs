@@ -3,7 +3,7 @@ using System.Windows.Input;
 using Android.Views;
 using Android.Widget;
 
-namespace Examples.Droid
+namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Droid
 {
     // This class is never actually executed, but when Xamarin linking is enabled it does how to ensure types and properties
     // are preserved in the deployed app
