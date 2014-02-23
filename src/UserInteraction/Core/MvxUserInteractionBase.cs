@@ -15,9 +15,6 @@ namespace codestuffers.MvvmCross.UserInteraction.Core
 
         public abstract void Alert(string message);
 
-        public void WithProgressBar<T>(Task<T> task, Action<Task<T>> onCompletion)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract void WithProgressBar<T>(Task<T> task, Action<Task<T>> onCompletion);
     }
 }
