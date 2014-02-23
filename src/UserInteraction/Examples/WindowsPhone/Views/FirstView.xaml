@@ -46,12 +46,35 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBox Grid.Column="0" 
+                         Text="{Binding AlertTitle, Mode=TwoWay}" />
+                <Button Grid.Column="1" 
+                        Command="{Binding ShowAlertWithTitleCommand}">Show Alert With Title</Button>
+            </Grid>
+            <Grid Margin="12,0,12,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Column="0" 
                          Text="{Binding ProgressDuration, Mode=TwoWay}"
                          InputScope="Number"/>
                 <Button Grid.Column="1" 
                         Command="{Binding ShowProgressCommand}"
                         IsEnabled="{Binding IsProgressCommandEnabled}">Show Progress</Button>
             </Grid>
+            <Grid Margin="12,0,12,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" 
+                         Text="{Binding DialogResult}" />
+                <Button Grid.Column="1" 
+                        Command="{Binding ShowDialogCommand}">Show Dialog</Button>
+            </Grid>
+            
         </StackPanel>
     </Grid>
 

@@ -1,9 +1,7 @@
 using System;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Cirrious.MvvmCross.ViewModels;
-using codestuffers.MvvmCross.UserInteraction.Core;
 
 namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels
 {
@@ -13,6 +11,8 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels
         private string _alertMessage = "Alert test";
         private int _progressDuration = 1000;
         private bool _isProgressCommandEnabled = true;
+        private string _dialogResult;
+        private string _alertTitle;
 
         public FirstViewModel(IMvxUserInteraction userInteraction)
         {
@@ -20,12 +20,21 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels
         }
 
         public ICommand ShowAlertCommand { get { return new MvxCommand(ShowAlert); } }
+        public ICommand ShowAlertWithTitleCommand { get { return new MvxCommand(ShowAlertWithTitle); } }
+
         public ICommand ShowProgressCommand { get { return new MvxCommand(ShowProgress); } }
+        public ICommand ShowDialogCommand { get {  return new MvxCommand(ShowDialog);} }
 
         public string AlertMessage
         {
             get { return _alertMessage; }
             set { _alertMessage = value; RaisePropertyChanged(() => AlertMessage); }
+        }
+
+        public string AlertTitle
+        {
+            get { return _alertTitle; }
+            set { _alertTitle = value; RaisePropertyChanged(() => AlertTitle); }
         }
 
         public int ProgressDuration
@@ -40,9 +49,26 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels
             set { _isProgressCommandEnabled = value; RaisePropertyChanged(() => IsProgressCommandEnabled); }
         }
 
+        public string DialogResult
+        {
+            get { return _dialogResult; }
+            set { _dialogResult = value; RaisePropertyChanged(() => DialogResult); }
+        }
+
         private void ShowAlert()
         {
             _userInteraction.Alert(AlertMessage);
+        }
+
+        private void ShowAlertWithTitle()
+        {
+            _userInteraction.Alert(AlertMessage, AlertTitle);
+        }
+
+        private void ShowDialog()
+        {
+            _userInteraction.ShowDialog("Sample title", "Sample dialog body", "Left", "Right", 
+                () => DialogResult = "Left", () => DialogResult = "Right");
         }
 
         private void ShowProgress()
