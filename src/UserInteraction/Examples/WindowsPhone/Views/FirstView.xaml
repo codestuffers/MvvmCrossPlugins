@@ -28,53 +28,42 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1">
-            <Grid Margin="12,0,12,0">
+            <Grid Margin="12,0,0,0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                
-                <TextBox Grid.Column="0" 
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="0" Grid.Row="0" 
+                           VerticalAlignment="Center">Message</TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="0"
                          Text="{Binding AlertMessage, Mode=TwoWay}" />
-                <Button Grid.Column="1" 
-                        Command="{Binding ShowAlertCommand}">Show Alert</Button>
-            </Grid>
-            <Grid Margin="12,0,12,0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
 
-                <TextBox Grid.Column="0" 
+                <TextBlock Grid.Column="0" Grid.Row="1" 
+                           VerticalAlignment="Center">Title</TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="1"
                          Text="{Binding AlertTitle, Mode=TwoWay}" />
-                <Button Grid.Column="1" 
-                        Command="{Binding ShowAlertWithTitleCommand}">Show Alert With Title</Button>
-            </Grid>
-            <Grid Margin="12,0,12,0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
 
-                <TextBox Grid.Column="0" 
+                <TextBlock Grid.Column="0" Grid.Row="2" 
+                           VerticalAlignment="Center">Progress duration</TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="2"
                          Text="{Binding ProgressDuration, Mode=TwoWay}"
                          InputScope="Number"/>
-                <Button Grid.Column="1" 
-                        Command="{Binding ShowProgressCommand}"
-                        IsEnabled="{Binding IsProgressCommandEnabled}">Show Progress</Button>
-            </Grid>
-            <Grid Margin="12,0,12,0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
-
-                <TextBlock Grid.Column="0" 
-                         Text="{Binding DialogResult}" />
-                <Button Grid.Column="1" 
-                        Command="{Binding ShowDialogCommand}">Show Dialog</Button>
             </Grid>
             
+            <StackPanel>
+                <Button Command="{Binding ShowAlertCommand}">Show Alert</Button>
+                <Button Command="{Binding ShowAlertWithTitleCommand}">Show Alert With Title</Button>
+                <Button Command="{Binding ShowProgressCommand}"
+                        IsEnabled="{Binding IsProgressCommandEnabled}">Show Progress</Button>
+                <Button Command="{Binding ShowDialogCommand}">Show Dialog</Button>
+            </StackPanel>
         </StackPanel>
     </Grid>
 

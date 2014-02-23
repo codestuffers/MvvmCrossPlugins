@@ -37,7 +37,7 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.WindowsPhone
         /// <param name="title">Title of the message box</param>
         public void Alert(string message, string title)
         {
-            _dispatcher.RequestMainThreadAction(() => MessageBox.Show(message, title, MessageBoxButton.OK));
+            _dispatcher.RequestMainThreadAction(() => MessageBox.Show(message, title ?? string.Empty, MessageBoxButton.OK));
         }
 
         /// <summary>

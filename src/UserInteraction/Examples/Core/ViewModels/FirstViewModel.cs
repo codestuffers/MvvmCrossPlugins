@@ -8,11 +8,10 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels
     public class FirstViewModel : MvxViewModel
     {
         private readonly IMvxUserInteraction _userInteraction;
-        private string _alertMessage = "Alert test";
+        private string _alertMessage = "Test dialog body";
         private int _progressDuration = 1000;
         private bool _isProgressCommandEnabled = true;
-        private string _dialogResult;
-        private string _alertTitle;
+        private string _alertTitle = "Test Title";
 
         public FirstViewModel(IMvxUserInteraction userInteraction)
         {
@@ -21,7 +20,6 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels
 
         public ICommand ShowAlertCommand { get { return new MvxCommand(ShowAlert); } }
         public ICommand ShowAlertWithTitleCommand { get { return new MvxCommand(ShowAlertWithTitle); } }
-
         public ICommand ShowProgressCommand { get { return new MvxCommand(ShowProgress); } }
         public ICommand ShowDialogCommand { get {  return new MvxCommand(ShowDialog);} }
 
@@ -49,12 +47,6 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels
             set { _isProgressCommandEnabled = value; RaisePropertyChanged(() => IsProgressCommandEnabled); }
         }
 
-        public string DialogResult
-        {
-            get { return _dialogResult; }
-            set { _dialogResult = value; RaisePropertyChanged(() => DialogResult); }
-        }
-
         private void ShowAlert()
         {
             _userInteraction.Alert(AlertMessage);
@@ -67,14 +59,13 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels
 
         private void ShowDialog()
         {
-            _userInteraction.ShowDialog("Sample title", "Sample dialog body", "Left", "Right", 
-                () => DialogResult = "Left", () => DialogResult = "Right");
+            _userInteraction.ShowDialog(AlertTitle, AlertMessage, "Left", "Right",
+                () => _userInteraction.Alert("You chose left"), () => _userInteraction.Alert("You chose right"));
         }
 
         private void ShowProgress()
         {
-            _userInteraction.WithProgressBar(Task.Factory.StartNew<int>(ActBusy), task => IsProgressCommandEnabled = true)
-            ;
+            _userInteraction.WithProgressBar(Task.Factory.StartNew<int>(ActBusy), task => IsProgressCommandEnabled = true);
         }
 
         private int ActBusy()
