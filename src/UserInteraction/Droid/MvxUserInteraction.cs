@@ -1,10 +1,10 @@
 ﻿using System;
-using codestuffers.MvvmCrossPlugins.UserInteraction;
-using Android.Widget;
-using Android.App;
-using Cirrious.CrossCore.Core;
 using System.Threading;
+using Android.App;
+using Android.Widget;
+using Cirrious.CrossCore.Core;
 using Cirrious.CrossCore.Droid.Platform;
+using codestuffers.MvvmCrossPlugins.UserInteraction;
 
 namespace codestuffers.MvvmCrossPlugins.UserInteraction.Droid
 {
@@ -22,16 +22,32 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Droid
 		public void Alert (string message)
 		{
             Alert(message, null);
-//            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Application.Context);
-//            alertDialogBuilder.SetMessage(message);
-//
-//            // create alert dialog
-//            AlertDialog alertDialog = alertDialogBuilder.Create();
-//
-//            _dispatcher.RequestMainThreadAction(() => alertDialog.Show());
 		}
 
 		public void Alert (string message, string title)
+        {
+            DisplayDialogWithButtons(message, title, x => x.SetNeutralButton("Ok", (sender, e) => { }));
+		}
+
+		public void ShowDialog (string message, string leftButton, string rightButton, Action leftButtonAction, Action rightButtonAction)
+		{
+            ShowDialog(message, null, leftButton, rightButton, leftButtonAction, rightButtonAction);
+		}
+
+		public void ShowDialog (string message, string title, string leftButton, string rightButton, Action leftButtonAction, Action rightButtonAction)
+        {
+            DisplayDialogWithButtons(message, title, x => {
+                x.SetNegativeButton(leftButton, (sender, e) => leftButtonAction());
+                x.SetPositiveButton(rightButton, (sender, e) => rightButtonAction());
+            });
+		}
+
+		public void WithProgressBar<T> (System.Threading.Tasks.Task<T> task, Action<System.Threading.Tasks.Task<T>> onCompletion)
+		{
+			throw new NotImplementedException ();
+		}
+
+        private void DisplayDialogWithButtons(string message, string title, Action<AlertDialog.Builder> buttonBuilder)
         {
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(_topActivity.Activity);
             alertDialogBuilder.SetMessage(message);
@@ -41,26 +57,12 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Droid
                 alertDialogBuilder.SetTitle(title);
             }
 
-            // create alert dialog
+            buttonBuilder(alertDialogBuilder);
+
             AlertDialog alertDialog = alertDialogBuilder.Create();
 
             _dispatcher.RequestMainThreadAction(() => alertDialog.Show());
-		}
-
-		public void ShowDialog (string message, string leftButton, string rightButton, Action leftButtonAction, Action rightButtonAction)
-		{
-			throw new NotImplementedException ();
-		}
-
-		public void ShowDialog (string message, string title, string leftButton, string rightButton, Action leftButtonAction, Action rightButtonAction)
-		{
-			throw new NotImplementedException ();
-		}
-
-		public void WithProgressBar<T> (System.Threading.Tasks.Task<T> task, Action<System.Threading.Tasks.Task<T>> onCompletion)
-		{
-			throw new NotImplementedException ();
-		}
+        }
 	}
 }
 

@@ -26,4 +26,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/button1"
         local:MvxBind="Click ShowAlertWithTitleCommand" />
+    <Button
+        android:text="Show Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        local:MvxBind="Click ShowDialogCommand" />
 </LinearLayout>
