@@ -59,8 +59,8 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels
 
         private void ShowDialog()
         {
-            _userInteraction.ShowDialog(AlertTitle, AlertMessage, "Left", "Right",
-                () => _userInteraction.Alert("You chose left"), () => _userInteraction.Alert("You chose right"));
+            _userInteraction.ShowDialog(AlertMessage, AlertTitle, "Left",
+                "Right", () => _userInteraction.Alert("You chose left"), () => _userInteraction.Alert("You chose right"));
         }
 
         private void ShowProgress()

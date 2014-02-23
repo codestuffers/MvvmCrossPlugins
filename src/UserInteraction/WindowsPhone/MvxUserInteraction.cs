@@ -27,7 +27,7 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.WindowsPhone
         /// <param name="message">Message that should be displayed</param>
         public void Alert(string message)
         {
-            _dispatcher.RequestMainThreadAction(() => MessageBox.Show(message));
+            Alert(message, null);
         }
 
         /// <summary>
@@ -43,13 +43,28 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.WindowsPhone
         /// <summary>
         /// Show a dialog box
         /// </summary>
-        /// <param name="title">Title of the dialog box</param>
         /// <param name="message">Detailed message that will be displayed</param>
         /// <param name="leftButton">Text for the left button</param>
         /// <param name="rightButton">Text for the right button</param>
         /// <param name="leftButtonAction">Action that will be executed if the left button is pressed</param>
         /// <param name="rightButtonAction">Action that will be executed if the right button is pressed</param>
-        public void ShowDialog(string title, string message, string leftButton, string rightButton, Action leftButtonAction, Action rightButtonAction)
+        public void ShowDialog(string message, string leftButton, string rightButton,
+            Action leftButtonAction, Action rightButtonAction)
+        {
+            ShowDialog(message, null, leftButton, rightButton, leftButtonAction, rightButtonAction);
+        }
+
+        /// <summary>
+        /// Show a dialog box
+        /// </summary>
+        /// <param name="message">Detailed message that will be displayed</param>
+        /// <param name="title">Title of the dialog box</param>
+        /// <param name="leftButton">Text for the left button</param>
+        /// <param name="rightButton">Text for the right button</param>
+        /// <param name="leftButtonAction">Action that will be executed if the left button is pressed</param>
+        /// <param name="rightButtonAction">Action that will be executed if the right button is pressed</param>
+        public void ShowDialog(string message, string title, string leftButton, string rightButton, 
+            Action leftButtonAction, Action rightButtonAction)
         {
             var messageBox = new CustomMessageBox
             {
@@ -58,7 +73,7 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.WindowsPhone
                 LeftButtonContent = leftButton,
                 RightButtonContent = rightButton,
                 Message = message,
-                Title = title
+                Title = title ?? string.Empty
             };
 
             messageBox.Dismissed += (sender, args) =>
@@ -92,6 +107,9 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.WindowsPhone
                 StopProgressAction(currentPage));
         }
 
+        /// <summary>
+        /// Creates an action that starts the progress indicator on the current page
+        /// </summary>
         private static Action StartProgressAction(DependencyObject currentPage)
         {
             return () =>
@@ -102,6 +120,9 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.WindowsPhone
             };
         }
 
+        /// <summary>
+        /// Creates an action that stops the progress indicator on the current page
+        /// </summary>
         private static Action StopProgressAction(DependencyObject currentPage)
         {
             return () =>
