@@ -10,6 +10,7 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction
     public class ProgressHelper
     {
         private readonly IMvxMainThreadDispatcher _dispatcher;
+        private int _progressIndicatorCount;
 
         public ProgressHelper(IMvxMainThreadDispatcher dispatcher)
         {
@@ -26,13 +27,17 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction
         /// <param name="stopProgressAction">Action that will hide the progress indicator</param>
         public void SetupTask<T>(Task<T> task, Action<Task<T>> onCompletion, Action startProgressAction, Action stopProgressAction)
         {
+            _progressIndicatorCount++;
             _dispatcher.RequestMainThreadAction(startProgressAction);
 
             task.ContinueWith(x =>
             {
                 onCompletion(task);
 
-                _dispatcher.RequestMainThreadAction(stopProgressAction);
+                if (--_progressIndicatorCount == 0)
+                {
+                    _dispatcher.RequestMainThreadAction(stopProgressAction);
+                }
             });
         }
     }
