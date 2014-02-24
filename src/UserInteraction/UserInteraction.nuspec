@@ -2,7 +2,7 @@
  <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>codestuffers.MvvmCross.UserInteraction</id>
-        <version>0.1.0</version>
+        <version>0.1.0-alpha2</version>
         <title>User Interaction (mvvmcross plugin)</title>
         <authors>codestuffers, LLC</authors>
         <owners>codestuffers, LLC</owners>
