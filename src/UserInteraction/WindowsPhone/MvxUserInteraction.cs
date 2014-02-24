@@ -97,7 +97,7 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.WindowsPhone
         /// <typeparam name="T">Type of data associated with the task</typeparam>
         /// <param name="task">Task that is executing</param>
         /// <param name="onCompletion">Action that is executed when the task is complete</param>
-        public void WithProgressBar<T>(Task<T> task, Action<Task<T>> onCompletion)
+        public void WithActivityIndicator<T>(Task<T> task, Action<Task<T>> onCompletion)
         {
             var frame = Application.Current.RootVisual as PhoneApplicationFrame;
             var currentPage = (frame != null) ? frame.Content as PhoneApplicationPage : null;

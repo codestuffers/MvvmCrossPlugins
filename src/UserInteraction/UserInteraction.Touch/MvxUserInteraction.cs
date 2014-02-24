@@ -86,7 +86,7 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Touch
         /// <typeparam name="T">Type of data associated with the task</typeparam>
         /// <param name="task">Task that is executing</param>
         /// <param name="onCompletion">Action that is executed when the task is complete</param>
-        public void WithProgressBar<T>(System.Threading.Tasks.Task<T> task, Action<System.Threading.Tasks.Task<T>> onCompletion)
+        public void WithActivityIndicator<T>(System.Threading.Tasks.Task<T> task, Action<System.Threading.Tasks.Task<T>> onCompletion)
         {
             _progressHelper.SetupTask(task, onCompletion, 
                 () => UIApplication.SharedApplication.NetworkActivityIndicatorVisible = true,

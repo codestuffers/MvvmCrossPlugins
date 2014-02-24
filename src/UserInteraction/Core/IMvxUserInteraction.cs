@@ -48,6 +48,6 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction
         /// <typeparam name="T">Type of data associated with the task</typeparam>
         /// <param name="task">Task that is executing</param>
         /// <param name="onCompletion">Action that is executed when the task is complete</param>
-        void WithProgressBar<T>(Task<T> task, Action<Task<T>> onCompletion);
+        void WithActivityIndicator<T>(Task<T> task, Action<Task<T>> onCompletion);
     }
 }

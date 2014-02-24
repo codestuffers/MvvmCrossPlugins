@@ -65,7 +65,7 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels
 
         private void ShowProgress()
         {
-            _userInteraction.WithProgressBar(Task.Factory.StartNew<int>(ActBusy), task => IsProgressCommandEnabled = true);
+            _userInteraction.WithActivityIndicator(Task.Factory.StartNew<int>(ActBusy), task => IsProgressCommandEnabled = true);
         }
 
         private int ActBusy()
