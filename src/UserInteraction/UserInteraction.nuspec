@@ -9,7 +9,7 @@
         <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>https://github.com/codestuffers/MvvmCrossPlugins</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>This package contains the 'UserInteraction' plugin for MvvmCross v3.</description>
+        <description>This package contains the 'UserInteraction' plugin for MvvmCross v3.  The plugin provides a simple way to display alerts, dialog boxes, and other UI items.</description>
         <tags>mvvm mvvmcross xamarin monodroid monotouch wpf windows8 winrt netcore wp wpdev windowsphone</tags>
         <dependencies>
           <dependency id="MvvmCross.HotTuna.CrossCore" version="3.1.1" />
