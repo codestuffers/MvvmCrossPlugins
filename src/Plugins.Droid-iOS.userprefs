@@ -1,37 +1,28 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UserInteraction/Examples/Examples.Touch/Views/FirstView.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UserInteraction/Core/Properties/AssemblyInfo.cs">
     <Files>
-      <File FileName="UserInteraction/UserInteraction.Touch/MvxUserInteraction.cs" Line="14" Column="40" />
-      <File FileName="UserInteraction/Core/IMvxUserInteraction.cs" Line="51" Column="35" />
-      <File FileName="UserInteraction/Examples/Examples.Touch/Views/FirstView.cs" Line="58" Column="125" />
-      <File FileName="UserInteraction/Examples/Examples.Touch/Setup.cs" Line="18" Column="15" />
-      <File FileName="UserInteraction/Examples/Core/ViewModels/FirstViewModel.cs" Line="59" Column="9" />
-      <File FileName="UserInteraction/Examples/Examples.Touch/Main.cs" Line="16" Column="1" />
-      <File FileName="UserInteraction/Droid/MvxUserInteraction.cs" Line="83" Column="42" />
-      <File FileName="UserInteraction/Core/ProgressHelper.cs" Line="40" Column="18" />
+      <File FileName="UserInteraction/Examples/Core/Properties/AssemblyInfo.cs" Line="30" Column="43" />
+      <File FileName="UserInteraction/Examples/Examples.Droid/Properties/AssemblyInfo.cs" Line="11" Column="86" />
+      <File FileName="UserInteraction/Core/Properties/AssemblyInfo.cs" Line="30" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="UserInteraction" expanded="True">
             <Node name="Examples" expanded="True">
-              <Node name="Examples.Core" expanded="True" selected="True">
-                <Node name="ViewModels" expanded="True" />
+              <Node name="Examples.Core" expanded="True">
+                <Node name="Properties" expanded="True" />
               </Node>
               <Node name="Examples.Droid" expanded="True">
-                <Node name="Resources" expanded="True">
-                  <Node name="Layout" expanded="True" />
-                </Node>
-                <Node name="Views" expanded="True" />
+                <Node name="Properties" expanded="True" />
               </Node>
               <Node name="Examples.Touch" expanded="True">
                 <Node name="Views" expanded="True" />
               </Node>
             </Node>
             <Node name="UserInteraction.Core" expanded="True" />
-            <Node name="UserInteraction.Droid" expanded="True" />
-            <Node name="UserInteraction.Touch" expanded="True" />
+            <Node name="UserInteraction.Touch" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
