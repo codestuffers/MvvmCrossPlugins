@@ -8,12 +8,18 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="40dp"
-        local:MvxBind="Text AlertMessage" />
+        local:MvxBind="Text AlertMessage, Mode=TwoWay" />
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="40dp"
-        local:MvxBind="Text AlertTitle" />
+        local:MvxBind="Text AlertTitle, Mode=TwoWay" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:inputType="number"
+        local:MvxBind="Text ProgressDuration, Mode=TwoWay" />
     <Button
         android:text="Show Alert"
         android:layout_width="match_parent"
@@ -26,6 +32,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/button1"
         local:MvxBind="Click ShowAlertWithTitleCommand" />
+    <Button
+        android:text="Show Progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        local:MvxBind="Click ShowProgressCommand; Enabled IsProgressCommandEnabled" />
     <Button
         android:text="Show Dialog"
         android:layout_width="match_parent"

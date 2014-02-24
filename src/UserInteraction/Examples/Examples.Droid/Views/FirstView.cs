@@ -12,5 +12,12 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Droid.Views
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.FirstView);
         }
+
+        protected override void OnViewModelSet()
+        {
+            base.OnViewModelSet();
+
+            RequestWindowFeature(Android.Views.WindowFeatures.IndeterminateProgress);
+        }
     }
 }
