@@ -48,7 +48,7 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Touch
         /// <param name="rightButtonAction">Action that will be executed if the right button is pressed</param>
         public void ShowDialog(string message, string leftButton, string rightButton, Action leftButtonAction, Action rightButtonAction)
         {
-            throw new NotImplementedException();
+            ShowDialog(message, null, leftButton, rightButton, leftButtonAction, rightButtonAction);
         }
 
         /// <summary>
@@ -62,7 +62,20 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Touch
         /// <param name="rightButtonAction">Action that will be executed if the right button is pressed</param>
         public void ShowDialog(string message, string title, string leftButton, string rightButton, Action leftButtonAction, Action rightButtonAction)
         {
-            throw new NotImplementedException();
+            var alert = new UIAlertView(title ?? string.Empty, message, null, null, leftButton, rightButton);
+
+            alert.Dismissed += (sender, e) => {
+                if (e.ButtonIndex == 0 && leftButtonAction != null)
+                {
+                    leftButtonAction();
+                }
+                else if (e.ButtonIndex == 1 && rightButtonAction != null)
+                {
+                    rightButtonAction();
+                }
+            };
+
+            alert.Show();
         }
 
         /// <summary>
