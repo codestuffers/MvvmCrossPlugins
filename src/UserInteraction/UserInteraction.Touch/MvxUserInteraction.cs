@@ -11,10 +11,12 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Touch
     public class MvxUserInteraction : IMvxUserInteraction
     {
         IMvxMainThreadDispatcher _dispatcher;
+        ProgressHelper _progressHelper;
 
         public MvxUserInteraction(IMvxMainThreadDispatcher dispatcher)
         {
             _dispatcher = dispatcher;
+            _progressHelper = new ProgressHelper(_dispatcher);
         }
 
         /// <summary>
@@ -75,7 +77,7 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Touch
                 }
             };
 
-            alert.Show();
+            _dispatcher.RequestMainThreadAction(() => alert.Show());
         }
 
         /// <summary>
@@ -86,7 +88,9 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Touch
         /// <param name="onCompletion">Action that is executed when the task is complete</param>
         public void WithProgressBar<T>(System.Threading.Tasks.Task<T> task, Action<System.Threading.Tasks.Task<T>> onCompletion)
         {
-            throw new NotImplementedException();
+            _progressHelper.SetupTask(task, onCompletion, 
+                () => UIApplication.SharedApplication.NetworkActivityIndicatorVisible = true,
+                () => UIApplication.SharedApplication.NetworkActivityIndicatorVisible = false);
         }
     }
 }

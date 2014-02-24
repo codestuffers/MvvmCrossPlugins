@@ -69,8 +69,8 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Droid
 		public void ShowDialog (string message, string title, string leftButton, string rightButton, Action leftButtonAction, Action rightButtonAction)
         {
             DisplayDialogWithButtons(message, title, x => {
-                x.SetNegativeButton(leftButton, (sender, e) => leftButtonAction());
-                x.SetPositiveButton(rightButton, (sender, e) => rightButtonAction());
+                x.SetNegativeButton(leftButton, (sender, e) => ExecuteAction(leftButtonAction));
+                x.SetPositiveButton(rightButton, (sender, e) => ExecuteAction(rightButtonAction));
             });
 		}
 
@@ -91,6 +91,18 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Droid
                 () => _topActivity.Activity.SetProgressBarIndeterminateVisibility(true),
                 () => _topActivity.Activity.SetProgressBarIndeterminateVisibility(false));
 		}
+
+        /// <summary>
+        /// Executes the action if it is not null
+        /// </summary>
+        /// <param name="action">Action that will be executed</param>
+        private static void ExecuteAction(Action action)
+        {
+            if (action != null)
+            {
+                action();
+            }
+        }
 
         /// <summary>
         /// Displaies a dialog with buttons
