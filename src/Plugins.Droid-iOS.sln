@@ -137,5 +137,7 @@ Global
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = UserInteraction\Examples\Examples.Touch\Examples.Touch.csproj
+		description = Cross platform user interface plugin that makes showing alert boxes, dialog boxes, and other UI related tasks simpler.
+		version = 0.1.0
 	EndGlobalSection
 EndGlobal

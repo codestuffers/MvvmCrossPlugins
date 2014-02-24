@@ -11,6 +11,7 @@
     <RootNamespace>codestuffers.MvvmCrossPlugins.UserInteraction.Touch</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>codestuffers.MvvmCrossPlugins.UserInteraction.Touch</AssemblyName>
+    <ReleaseVersion>0.1.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

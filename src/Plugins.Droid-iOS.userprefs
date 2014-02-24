@@ -1,21 +1,48 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina4.7.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UserInteraction/Core/PluginLoader.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UserInteraction/Examples/Examples.Touch/Views/FirstView.cs">
     <Files>
-      <File FileName="UserInteraction/UserInteraction.Touch/MvxUserInteraction.cs" Line="5" Column="33" />
-      <File FileName="UserInteraction/Core/IMvxUserInteraction.cs" Line="23" Column="9" />
-      <File FileName="UserInteraction/Examples/Examples.Touch/ToDo-MvvmCross/_ Touch UI.txt" Line="29" Column="53" />
-      <File FileName="UserInteraction/Examples/Examples.Touch/Views/FirstView.cs" Line="18" Column="1" />
+      <File FileName="UserInteraction/UserInteraction.Touch/MvxUserInteraction.cs" Line="14" Column="40" />
+      <File FileName="UserInteraction/Core/IMvxUserInteraction.cs" Line="51" Column="35" />
+      <File FileName="UserInteraction/Examples/Examples.Touch/Views/FirstView.cs" Line="58" Column="125" />
       <File FileName="UserInteraction/Examples/Examples.Touch/Setup.cs" Line="18" Column="15" />
-      <File FileName="UserInteraction/Examples/Examples.Touch/Bootstrap/UserInteractionBootstrap.cs" Line="7" Column="6" />
-      <File FileName="UserInteraction/Core/PluginLoader.cs" Line="19" Column="1" />
-      <File FileName="UserInteraction/UserInteraction.Touch/Plugin.cs" Line="5" Column="31" />
-      <File FileName="UserInteraction/UserInteraction.Touch/LinkerPleaseInclude.cs" Line="6" Column="62" />
+      <File FileName="UserInteraction/Examples/Core/ViewModels/FirstViewModel.cs" Line="59" Column="9" />
+      <File FileName="UserInteraction/Examples/Examples.Touch/Main.cs" Line="16" Column="1" />
+      <File FileName="UserInteraction/Droid/MvxUserInteraction.cs" Line="83" Column="42" />
+      <File FileName="UserInteraction/Core/ProgressHelper.cs" Line="40" Column="18" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="UserInteraction" expanded="True">
+            <Node name="Examples" expanded="True">
+              <Node name="Examples.Core" expanded="True" selected="True">
+                <Node name="ViewModels" expanded="True" />
+              </Node>
+              <Node name="Examples.Droid" expanded="True">
+                <Node name="Resources" expanded="True">
+                  <Node name="Layout" expanded="True" />
+                </Node>
+                <Node name="Views" expanded="True" />
+              </Node>
+              <Node name="Examples.Touch" expanded="True">
+                <Node name="Views" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="UserInteraction.Core" expanded="True" />
+            <Node name="UserInteraction.Droid" expanded="True" />
+            <Node name="UserInteraction.Touch" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/andrewbenz/Documents/work/MvvmCrossPlugins/src/UserInteraction/UserInteraction.Touch/DialogDelegate.cs" line="49" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="codestuffers, LLC" Email="support@codestuffers.com" Copyright="codestuffers, LLC" Company="codestuffers, LLC" Trademark="codestuffers, LLC" />
   <MonoDevelop.Ide.ItemProperties.UserInteraction.Examples.Examples.Droid AndroidDeviceId-Debug="200804114c250a4" MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" />
 </Properties>
