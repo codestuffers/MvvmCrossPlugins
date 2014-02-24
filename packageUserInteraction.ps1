@@ -1,0 +1,1 @@
+.\src\.nuget\nuget.exe Pack .\src\UserInteraction\UserInteraction.nuspec -OutputDirectory .\Artifacts\
