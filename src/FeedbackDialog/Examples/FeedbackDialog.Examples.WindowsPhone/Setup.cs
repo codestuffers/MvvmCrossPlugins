@@ -1,6 +1,9 @@
+using System;
 using Cirrious.CrossCore.Platform;
+using Cirrious.CrossCore.Plugins;
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.WindowsPhone.Platform;
+using codestuffers.MvvmCrossPlugins.FeedbackDialog;
 using Microsoft.Phone.Controls;
 
 namespace FeedbackDialog.Examples.WindowsPhone
@@ -19,6 +22,21 @@ namespace FeedbackDialog.Examples.WindowsPhone
         protected override IMvxTrace CreateDebugTrace()
         {
             return new DebugTrace();
+        }
+
+        protected override IMvxPluginConfiguration GetPluginConfiguration(Type plugin)
+        {
+            if (plugin == typeof(PluginLoader))
+            {
+                // This is the minimum configuration needed to use the feedback dialog
+                return new FeedbackDialogConfiguration
+                {
+                    ApplicationReviewUrl = "https://www.github.com",
+                    FeedbackEmailAddress = "info@example.com"
+                };
+            }
+
+            return null;
         }
     }
 }

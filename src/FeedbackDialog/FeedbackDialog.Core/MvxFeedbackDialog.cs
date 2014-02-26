@@ -1,4 +1,5 @@
-﻿using Cirrious.MvvmCross.Plugins.Email;
+﻿using System;
+using Cirrious.MvvmCross.Plugins.Email;
 using Cirrious.MvvmCross.Plugins.WebBrowser;
 using codestuffers.MvvmCrossPlugins.UserInteraction;
 
@@ -10,6 +11,7 @@ namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
         private readonly IFeedbackDataService _dataService;
         private readonly IMvxComposeEmailTask _composeEmailTask;
         private readonly IMvxWebBrowserTask _webBrowser;
+        private FeedbackDialogConfiguration _configuration;
 
         public MvxFeedbackDialog(IMvxUserInteraction userInteraction, IFeedbackDataService dataService,
             IMvxComposeEmailTask composeEmailTask, IMvxWebBrowserTask webBrowser)
@@ -22,10 +24,10 @@ namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
 
         public void RecordAppStart()
 		{
-            if (_dataService.AppWasOpened(3) == FeedbackAction.OpenDialog)
+            if (_dataService.AppWasOpened(_configuration.ShowFeedbackAfterApplicationOpenCount) == FeedbackAction.OpenDialog)
             {
-                _userInteraction.ShowDialog("What do you think of the app so far?", "Feedback",
-                    "Love it!", "Hate it...", HandleLoveIt, HandleHateIt);
+                _userInteraction.ShowDialog(_configuration.DialogTitle, _configuration.DialogBody,
+                    _configuration.LoveItButtonText, _configuration.HateItButtonText, HandleLoveIt, HandleHateIt);
 			}
 		}
 
@@ -38,14 +40,25 @@ namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
         {
             _dataService.DialogWasShown();
 
-            _webBrowser.ShowWebPage("http://www.github.com");
+            _webBrowser.ShowWebPage(_configuration.ApplicationReviewUrl);
         }
 
         private void HandleHateIt()
         {
             _dataService.DialogWasShown();
 
-            _composeEmailTask.ComposeEmail("info@example.com", null, "Feedback for example", "Sorry to hear that, please tell us why...", false);
+            _composeEmailTask.ComposeEmail(_configuration.FeedbackEmailAddress, null, 
+                _configuration.FeedbackSubject, _configuration.FeedbackBody, false);
+        }
+
+        internal void SetConfiguration(FeedbackDialogConfiguration configuration)
+        {
+            if (configuration == null)
+            {
+                throw new ArgumentNullException("configuration");
+            }
+
+            _configuration = configuration;
         }
     }
 }
