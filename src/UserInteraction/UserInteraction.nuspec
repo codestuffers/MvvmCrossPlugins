@@ -2,7 +2,7 @@
  <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>codestuffers.MvvmCross.UserInteraction</id>
-        <version>0.1.0-alpha2</version>
+        <version>0.1.0-alpha3</version>
         <title>User Interaction (mvvmcross plugin)</title>
         <authors>codestuffers, LLC</authors>
         <owners>codestuffers, LLC</owners>
@@ -12,7 +12,13 @@
         <description>This package contains the 'UserInteraction' plugin for MvvmCross v3.  The plugin provides a simple way to display alerts, dialog boxes, and other UI items.</description>
         <tags>mvvm mvvmcross xamarin monodroid monotouch wpf windows8 winrt netcore wp wpdev windowsphone</tags>
         <dependencies>
-          <dependency id="MvvmCross.HotTuna.CrossCore" version="3.1.1" />
+            <group>
+                <dependency id="MvvmCross.HotTuna.CrossCore" version="3.1.1" />
+            </group>
+
+            <group targetFramework="wp8">
+                <dependency id="WPtoolkit" version="4.2013.8.16" />
+            </group>
         </dependencies>
     </metadata>
     <files>     
