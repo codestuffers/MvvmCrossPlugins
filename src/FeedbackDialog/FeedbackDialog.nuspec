@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>codestuffers.MvvmCross.FeedbackDialog</id>
+        <version>0.1.0-alpha</version>
+        <title>Feedback Dialog (mvvmcross plugin)</title>
+        <authors>codestuffers, LLC</authors>
+        <owners>codestuffers, LLC</owners>
+        <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/codestuffers/MvvmCrossPlugins</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>This package contains the 'FeedbackDialog' plugin for MvvmCross v3, which provides a quick and simple way of soliciting user feedback</description>
+        <summary>This package contains the 'FeedbackDialog' plugin for MvvmCross v3.  The plugin provides a quick and simple method for showing a dialog that solicits a user for feedback on the app after a certain number of app opens.  The user can choose whether the like the app or not.  If they do, they are taken to an app review page.  If they don't they will be asked to submit an email for feedback.</summary>
+        <tags>mvvm mvvmcross xamarin monodroid monotouch wpf windows8 winrt netcore wp wpdev windowsphone</tags>
+        <dependencies>
+            <dependency id="MvvmCross.HotTuna.CrossCore" version="3.1.1" />
+            <dependency id="MvvmCross.HotTuna.Plugin.Email" version="3.1.1" />
+            <dependency id="MvvmCross.HotTuna.Plugin.File" version="3.1.1" />
+            <dependency id="MvvmCross.HotTuna.Plugin.Json" version="3.1.1" />
+            <dependency id="MvvmCross.HotTuna.Plugin.WebBrowser" version="3.1.1" />
+            <dependency id="codestuffers.MvvmCross.UserInteraction" version="0.1.1" />
+        </dependencies>
+    </metadata>
+    <files>     
+        <!-- PCL -->
+        <file src="..\..\Artifacts\FeedbackDialog\Core\codestuffers.FeedbackDialog.Core.dll" 
+            target="lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\codestuffers.FeedbackDialog.Core.dll" />
+
+        <!-- phone -->
+        <file src="PluginBootstrap.cs.pp" target="content\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\Bootstrap\FeedbackDialogPluginBootstrap.cs.pp" />
+    </files>
+</package>
