@@ -2,7 +2,7 @@
  <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>codestuffers.MvvmCross.UserInteraction</id>
-        <version>0.1.0-alpha3</version>
+        <version>0.1.1</version>
         <title>User Interaction (mvvmcross plugin)</title>
         <authors>codestuffers, LLC</authors>
         <owners>codestuffers, LLC</owners>
@@ -17,6 +17,7 @@
             </group>
 
             <group targetFramework="wp8">
+                <dependency id="MvvmCross.HotTuna.CrossCore" version="3.1.1" />
                 <dependency id="WPtoolkit" version="4.2013.8.16" />
             </group>
         </dependencies>
