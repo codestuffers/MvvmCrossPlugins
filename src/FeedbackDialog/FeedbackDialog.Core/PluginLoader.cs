@@ -28,6 +28,10 @@ namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
                 }));
         }
 
+        /// <summary>
+        /// Configure the plugin
+        /// </summary>
+        /// <param name="configuration">Plugin configuration data</param>
         public void Configure(IMvxPluginConfiguration configuration)
         {
             if (configuration == null)

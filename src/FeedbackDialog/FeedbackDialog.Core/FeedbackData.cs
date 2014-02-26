@@ -1,13 +1,33 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
 {
-    internal class FeedbackData : IFeedbackData
+    /// <summary>
+    /// Holds the data needed by the feedback dialog to operate
+    /// </summary>
+    internal class FeedbackData
     {
-        public int TimesAppHasStarted { get; set; }
+        /// <summary>
+        /// Numer of times the app has been opened
+        /// </summary>
+        [JsonProperty]
+        private int TimesAppHasStarted { get; set; }
 
-        public DateTime AppInstallDate { get; set; }
+        /// <summary>
+        /// Date of the first time the application was opened
+        /// </summary>
+        [JsonProperty]
+        private DateTime AppInstallDate { get; set; }
 
+        /// <summary>
+        /// Has the dialog been opened yet?
+        /// </summary>
+        public bool DialogWasShown { get; set; }
+
+        /// <summary>
+        /// Track that the application was opened
+        /// </summary>
         public void AppHasOpened()
         {
             if (TimesAppHasStarted == 0)
@@ -18,11 +38,14 @@ namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
             TimesAppHasStarted++;
         }
 
+        /// <summary>
+        /// Gets whether the dialog should be opened
+        /// </summary>
+        /// <param name="requiredOpens">Number of times the app is required to open before showing the dialog</param>
+        /// <returns>True if the dialog should be opened or false if not.</returns>
         public bool ShouldOpenDialog(int requiredOpens)
         {
-            return TimesAppHasStarted >= requiredOpens;
+            return !DialogWasShown &&  TimesAppHasStarted >= requiredOpens;
         }
-
-        public bool DialogWasShown { get; set; }
     }
 }

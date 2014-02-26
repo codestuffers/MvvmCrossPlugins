@@ -43,7 +43,6 @@
     <Compile Include="FeedbackData.cs" />
     <Compile Include="FeedbackDataService.cs" />
     <Compile Include="FeedbackDialogConfiguration.cs" />
-    <Compile Include="IFeedbackData.cs" />
     <Compile Include="IFeedbackDataService.cs" />
     <Compile Include="IMvxFeedbackDialog.cs" />
     <Compile Include="MvxFeedbackDialog.cs" />
