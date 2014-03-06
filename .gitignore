@@ -11,6 +11,7 @@ TestResults
 # User-specific files
 *.suo
 *.user
+*.userprefs
 *.sln.docstates
 *.userprefs
 
@@ -81,6 +82,9 @@ publish
 
 # NuGet Packages Directory
 packages
+
+# Xamarin components
+src/Components
 
 # Windows Azure Build Output
 csx
