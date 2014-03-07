@@ -36,7 +36,7 @@ namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
 		{
             if (_dataService.AppWasOpened(_configuration.ShowFeedbackAfterApplicationOpenCount) == FeedbackAction.OpenDialog)
             {
-                _userInteraction.ShowDialog(_configuration.DialogTitle, _configuration.DialogBody,
+                _userInteraction.ShowDialog(_configuration.DialogBody, _configuration.DialogTitle,
                     _configuration.LoveItButtonText, _configuration.HateItButtonText, HandleLoveIt, HandleHateIt);
 			}
 		}
