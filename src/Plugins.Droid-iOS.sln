@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{C5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedbackDialog.Examples.Core", "FeedbackDialog\Examples\FeedbackDialog.Examples.Core\FeedbackDialog.Examples.Core.csproj", "{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedbackDialog.Examples.Touch", "FeedbackDialog\Examples\FeedbackDialog.Examples.Core\FeedbackDialog.Examples.Touch\FeedbackDialog.Examples.Touch.csproj", "{AB8E669D-3B54-41C5-9FC0-8F50640AFE36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedbackDialog.Examples.Touch", "FeedbackDialog\Examples\FeedbackDialog.Examples.Touch\FeedbackDialog.Examples.Touch.csproj", "{AB8E669D-3B54-41C5-9FC0-8F50640AFE36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -198,7 +198,7 @@ Global
 		{AB8E669D-3B54-41C5-9FC0-8F50640AFE36} = {C551EB0A-0CF1-4CB0-B64F-1EF57FB7C600}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = FeedbackDialog\Examples\FeedbackDialog.Examples.Core\FeedbackDialog.Examples.Touch\FeedbackDialog.Examples.Touch.csproj
+		StartupItem = UserInteraction\Examples\Core\Examples.Core.csproj
 		description = Cross platform user interface plugin that makes showing alert boxes, dialog boxes, and other UI related tasks simpler.
 		version = 0.1.0
 	EndGlobalSection
