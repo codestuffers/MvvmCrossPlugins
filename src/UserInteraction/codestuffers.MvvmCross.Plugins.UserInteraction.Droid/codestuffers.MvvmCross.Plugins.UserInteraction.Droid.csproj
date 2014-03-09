@@ -32,7 +32,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\Artifacts\UserInteraction\Droid\</OutputPath>
+    <OutputPath>..\..\..\Artifacts\codestuffers.MvvmCross.Plugins.UserInteraction.Droid</OutputPath>
     <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -73,6 +73,9 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="MvxUserInteraction.cs" />
     <Compile Include="Plugin.cs" />
+    <Compile Include="..\VersionInfo.cs">
+      <Link>VersionInfo.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -86,10 +89,6 @@
     <ProjectReference Include="..\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
       <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
       <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Examples\codestuffers.MvvmCross.Plugins.UserInteraction.Examples\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.csproj">
-      <Project>{F0F9C154-6855-410F-99AE-A046EFF40B59}</Project>
-      <Name>codestuffers.MvvmCross.Plugins.UserInteraction.Examples</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

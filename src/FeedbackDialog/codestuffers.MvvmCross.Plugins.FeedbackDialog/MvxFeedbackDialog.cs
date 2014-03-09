@@ -38,7 +38,7 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
             {
                 _dataService.DialogWasShown();
                 _userInteraction.ShowDialog(_configuration.DialogBody, _configuration.DialogTitle,
-                    _configuration.LoveItButtonText, _configuration.HateItButtonText, HandleLoveIt, HandleHateIt);
+                    _configuration.HateItButtonText, _configuration.LoveItButtonText, HandleHateIt, HandleLoveIt);
 			}
 		}
 

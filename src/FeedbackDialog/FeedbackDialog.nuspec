@@ -2,7 +2,7 @@
  <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>codestuffers.MvvmCross.FeedbackDialog</id>
-        <version>0.1.0-alpha</version>
+        <version>0.1.2-alpha</version>
         <title>Feedback Dialog (mvvmcross plugin)</title>
         <authors>codestuffers, LLC</authors>
         <owners>codestuffers, LLC</owners>
@@ -23,7 +23,7 @@
     </metadata>
     <files>     
         <!-- PCL -->
-        <file src="..\..\Artifacts\FeedbackDialog\Core\codestuffers.MvvmCross.Plugins.FeedbackDialog.dll" 
+        <file src="..\..\Artifacts\FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.dll" 
             target="lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\codestuffers.MvvmCross.Plugins.FeedbackDialog.dll" />
 
         <!-- phone -->

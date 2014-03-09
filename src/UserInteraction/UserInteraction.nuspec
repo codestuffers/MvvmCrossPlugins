@@ -2,7 +2,7 @@
  <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>codestuffers.MvvmCross.UserInteraction</id>
-        <version>0.1.1</version>
+        <version>0.1.2</version>
         <title>User Interaction (mvvmcross plugin)</title>
         <authors>codestuffers, LLC</authors>
         <owners>codestuffers, LLC</owners>
@@ -24,26 +24,26 @@
     </metadata>
     <files>
         <!-- PCL -->
-        <file src="..\..\Artifacts\UserInteraction\Core\codestuffers.MvvmCross.Plugins.UserInteraction.dll"
+        <file src="..\..\Artifacts\UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.dll"
             target="lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\codestuffers.MvvmCross.Plugins.UserInteraction.dll" />
 
         <!-- phone -->
-        <file src="..\..\Artifacts\UserInteraction\Core\codestuffers.MvvmCross.Plugins.UserInteraction.Core.dll" 
-            target="lib\wp8\codestuffers.MvvmCross.Plugins.UserInteraction.Core.dll" />
+        <file src="..\..\Artifacts\UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction..dll" 
+            target="lib\wp8\codestuffers.MvvmCross.Plugins.UserInteraction..dll" />
         <file src="..\..\Artifacts\UserInteraction\WindowsPhone\codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone.dll" 
             target="lib\wp8\codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone.dll" />
         <file src="PluginBootstrap.cs.pp" target="content\wp8\Bootstrap\UserInteractionPluginBootstrap.cs.pp" />
 
         <!-- droid -->
-        <file src="..\..\Artifacts\UserInteraction\Core\codestuffers.MvvmCross.Plugins.UserInteraction.Core.dll" 
-            target="lib\MonoAndroid\codestuffers.MvvmCross.Plugins.UserInteraction.Core.dll" />
+        <file src="..\..\Artifacts\UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction..dll" 
+            target="lib\MonoAndroid\codestuffers.MvvmCross.Plugins.UserInteraction..dll" />
         <file src="..\..\Artifacts\UserInteraction\Droid\codestuffers.MvvmCross.Plugins.UserInteraction.Droid.dll" 
             target="lib\MonoAndroid\codestuffers.MvvmCross.Plugins.UserInteraction.Droid.dll" />
         <file src="PluginBootstrap.cs.pp" target="content\MonoAndroid\Bootstrap\UserInteractionPluginBootstrap.cs.pp" />
 
         <!-- touch -->
-        <file src="..\..\Artifacts\UserInteraction\Core\codestuffers.MvvmCross.Plugins.UserInteraction.Core.dll" 
-            target="lib\MonoTouch\codestuffers.MvvmCross.Plugins.UserInteraction.Core.dll" />
+        <file src="..\..\Artifacts\UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction..dll" 
+            target="lib\MonoTouch\codestuffers.MvvmCross.Plugins.UserInteraction..dll" />
         <file src="..\..\Artifacts\UserInteraction\Touch\codestuffers.MvvmCross.Plugins.UserInteraction.Touch.dll" 
             target="lib\MonoTouch\codestuffers.MvvmCross.Plugins.UserInteraction.Touch.dll" />
         <file src="PluginBootstrapTouch.cs.pp" target="content\MonoTouch\Bootstrap\UserInteractionPluginBootstrap.cs.pp" />
