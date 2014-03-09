@@ -2,7 +2,7 @@ using MonoTouch.UIKit;
 using Cirrious.CrossCore.Platform;
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.Touch.Platform;
-using codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Core;
+using codestuffers.MvvmCross.Plugins.UserInteraction.Examples;
 
 namespace Examples.Touch
 {

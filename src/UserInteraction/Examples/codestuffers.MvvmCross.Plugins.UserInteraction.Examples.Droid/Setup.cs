@@ -2,7 +2,7 @@ using Android.Content;
 using Cirrious.CrossCore.Platform;
 using Cirrious.MvvmCross.Droid.Platform;
 using Cirrious.MvvmCross.ViewModels;
-using codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Core;
+using codestuffers.MvvmCross.Plugins.UserInteraction.Examples;
 
 namespace codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid
 {

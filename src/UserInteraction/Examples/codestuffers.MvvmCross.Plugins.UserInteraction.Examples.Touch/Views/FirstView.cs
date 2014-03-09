@@ -5,7 +5,7 @@ using Cirrious.MvvmCross.Touch.Views;
 using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
-using codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Core.ViewModels;
+using codestuffers.MvvmCross.Plugins.UserInteraction.Examples.ViewModels;
 
 namespace Examples.Touch.Views
 {
@@ -21,8 +21,6 @@ namespace Examples.Touch.Views
             if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
                EdgesForExtendedLayout = UIRectEdge.None;
 			   
-            //var label = new UILabel(new RectangleF(10, 10, 300, 40));
-            //Add(label);
             var alertMessage = new UITextField(new RectangleF(10, 10, 300, 40));
             Add(alertMessage);
 

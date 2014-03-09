@@ -4,7 +4,7 @@ using Cirrious.CrossCore.Plugins;
  namespace $rootnamespace$.Bootstrap
  {
     public class UserInteractionPluginBootstrap
-        : MvxPluginBootstrapAction<codestuffers.MvvmCrossPlugins.UserInteraction.PluginLoader>
+        : MvxPluginBootstrapAction<codestuffers.MvvmCross.Plugins.UserInteraction.PluginLoader>
     {
     }
  }

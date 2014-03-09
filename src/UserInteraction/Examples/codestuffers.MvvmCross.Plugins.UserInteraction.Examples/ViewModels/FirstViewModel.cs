@@ -2,8 +2,9 @@ using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Cirrious.MvvmCross.ViewModels;
+using codestuffers.MvvmCross.Plugins.UserInteraction;
 
-namespace codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Core.ViewModels
+namespace codestuffers.MvvmCross.Plugins.UserInteraction.Examples.ViewModels
 {
     public class FirstViewModel : MvxViewModel
     {

@@ -16,7 +16,6 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AssemblyName>codestuffers.MvvmCross.Plugins.UserInteraction.Droid</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <ReleaseVersion>0.1.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -83,9 +82,13 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Core\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
+    <ProjectReference Include="..\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
       <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
       <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Examples\codestuffers.MvvmCross.Plugins.UserInteraction.Examples\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.csproj">
+      <Project>{F0F9C154-6855-410F-99AE-A046EFF40B59}</Project>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction.Examples</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

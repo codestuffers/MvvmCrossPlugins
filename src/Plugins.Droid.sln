@@ -5,15 +5,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserInteraction", "UserInte
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{52829726-DD32-452D-A370-3388AC595E41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Core", "UserInteraction\Examples\Core\Examples.Core.csproj", "{F0F9C154-6855-410F-99AE-A046EFF40B59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.UserInteraction.Examples", "UserInteraction\Examples\codestuffers.MvvmCross.Plugins.UserInteraction.Examples\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.csproj", "{F0F9C154-6855-410F-99AE-A046EFF40B59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Droid", "UserInteraction\Examples\Examples.Droid\Examples.Droid.csproj", "{BF3F7085-407F-484E-8C09-D282AB9DEA05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid", "UserInteraction\Examples\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid.csproj", "{BF3F7085-407F-484E-8C09-D282AB9DEA05}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CA9EAD29-C6E2-4440-A531-8009B3A25700}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInteraction.Core", "UserInteraction\Core\UserInteraction.Core.csproj", "{BB6519DA-DA8F-40E6-8B05-B96887074492}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.UserInteraction", "UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.csproj", "{BB6519DA-DA8F-40E6-8B05-B96887074492}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInteraction.Droid", "UserInteraction\Droid\UserInteraction.Droid.csproj", "{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.UserInteraction.Droid", "UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.Droid\codestuffers.MvvmCross.Plugins.UserInteraction.Droid.csproj", "{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FeedbackDialog", "FeedbackDialog", "{64A4A221-EFC6-42EB-A2EC-423B85C65BA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{1A71D188-A6FF-4EE0-B6EE-97F9BF38A489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples", "FeedbackDialog\Examples\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.csproj", "{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog", "FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.csproj", "{B9290266-2922-4BC4-97B6-D4C5E018A30C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +29,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9290266-2922-4BC4-97B6-D4C5E018A30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9290266-2922-4BC4-97B6-D4C5E018A30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9290266-2922-4BC4-97B6-D4C5E018A30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9290266-2922-4BC4-97B6-D4C5E018A30C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BB6519DA-DA8F-40E6-8B05-B96887074492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB6519DA-DA8F-40E6-8B05-B96887074492}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB6519DA-DA8F-40E6-8B05-B96887074492}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,8 +61,11 @@ Global
 		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD} = {D2EAC95A-0E3F-49CC-9DDB-C9B9B345B0D1}
 		{F0F9C154-6855-410F-99AE-A046EFF40B59} = {52829726-DD32-452D-A370-3388AC595E41}
 		{BF3F7085-407F-484E-8C09-D282AB9DEA05} = {52829726-DD32-452D-A370-3388AC595E41}
+		{1A71D188-A6FF-4EE0-B6EE-97F9BF38A489} = {64A4A221-EFC6-42EB-A2EC-423B85C65BA4}
+		{B9290266-2922-4BC4-97B6-D4C5E018A30C} = {64A4A221-EFC6-42EB-A2EC-423B85C65BA4}
+		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E} = {1A71D188-A6FF-4EE0-B6EE-97F9BF38A489}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = UserInteraction\Examples\Examples.Droid\Examples.Droid.csproj
+		StartupItem = UserInteraction\Examples\codestuffers.MvvmCross.Plugins.UserInteraction.Examples\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.csproj
 	EndGlobalSection
 EndGlobal
