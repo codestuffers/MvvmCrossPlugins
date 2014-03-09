@@ -208,21 +208,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\UserInteraction\Core\UserInteraction.Core.csproj">
-      <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
-      <Name>UserInteraction.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\UserInteraction\WindowsPhone\UserInteraction.WindowsPhone.csproj">
+    <ProjectReference Include="..\..\..\UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone\codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone.csproj">
       <Project>{72CB08FC-0F5B-4880-8B5F-B1DE7F1429CF}</Project>
-      <Name>UserInteraction.WindowsPhone</Name>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\FeedbackDialog.Core\FeedbackDialog.Core.csproj">
+    <ProjectReference Include="..\..\..\UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
+      <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\codestuffers.MvvmCross.Plugins.FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.csproj">
       <Project>{B9290266-2922-4BC4-97B6-D4C5E018A30C}</Project>
-      <Name>FeedbackDialog.Core</Name>
+      <Name>codestuffers.MvvmCross.Plugins.FeedbackDialog</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FeedbackDialog.Examples.Core\FeedbackDialog.Examples.Core.csproj">
+    <ProjectReference Include="..\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.csproj">
       <Project>{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}</Project>
-      <Name>FeedbackDialog.Examples.Core</Name>
+      <Name>codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />

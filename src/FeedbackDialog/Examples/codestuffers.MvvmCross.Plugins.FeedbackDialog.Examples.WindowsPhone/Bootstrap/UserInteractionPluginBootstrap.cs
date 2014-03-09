@@ -1,5 +1,5 @@
 using Cirrious.CrossCore.Plugins;
-using codestuffers.MvvmCrossPlugins.UserInteraction;
+using codestuffers.MvvmCross.Plugins.UserInteraction;
 
 namespace FeedbackDialog.Examples.WindowsPhone.Bootstrap
 {

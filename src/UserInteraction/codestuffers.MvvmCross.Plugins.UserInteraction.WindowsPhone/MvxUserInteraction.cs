@@ -5,7 +5,7 @@ using System;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction.WindowsPhone
+namespace codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone
 {
     /// <summary>
     /// Provides user interaction functionality in a cross platform way

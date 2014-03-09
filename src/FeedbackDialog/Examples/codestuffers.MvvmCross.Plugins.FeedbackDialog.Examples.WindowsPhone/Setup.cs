@@ -3,7 +3,7 @@ using Cirrious.CrossCore.Platform;
 using Cirrious.CrossCore.Plugins;
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.WindowsPhone.Platform;
-using codestuffers.MvvmCrossPlugins.FeedbackDialog;
+using codestuffers.MvvmCross.Plugins.FeedbackDialog;
 using Microsoft.Phone.Controls;
 
 namespace FeedbackDialog.Examples.WindowsPhone
@@ -16,7 +16,7 @@ namespace FeedbackDialog.Examples.WindowsPhone
 
         protected override IMvxApplication CreateApp()
         {
-            return new Core.App();
+            return new codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.App();
         }
 		
         protected override IMvxTrace CreateDebugTrace()

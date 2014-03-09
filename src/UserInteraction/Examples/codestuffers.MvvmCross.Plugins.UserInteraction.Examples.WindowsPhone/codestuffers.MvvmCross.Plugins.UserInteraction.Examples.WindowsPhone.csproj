@@ -171,17 +171,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\UserInteraction.Core.csproj">
-      <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
-      <Name>UserInteraction.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\WindowsPhone\UserInteraction.WindowsPhone.csproj">
+    <ProjectReference Include="..\..\codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone\codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone.csproj">
       <Project>{72CB08FC-0F5B-4880-8B5F-B1DE7F1429CF}</Project>
-      <Name>UserInteraction.WindowsPhone</Name>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Core\Examples.Core.csproj">
+    <ProjectReference Include="..\..\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
+      <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\codestuffers.MvvmCross.Plugins.UserInteraction.Examples\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.csproj">
       <Project>{F0F9C154-6855-410F-99AE-A046EFF40B59}</Project>
-      <Name>Examples.Core</Name>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction.Examples</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />

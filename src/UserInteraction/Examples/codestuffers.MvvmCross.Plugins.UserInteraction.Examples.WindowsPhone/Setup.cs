@@ -1,8 +1,6 @@
-using Cirrious.CrossCore;
 using Cirrious.CrossCore.Platform;
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.WindowsPhone.Platform;
-using codestuffers.MvvmCrossPlugins.UserInteraction.WindowsPhone;
 using Microsoft.Phone.Controls;
 
 namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.WindowsPhone
@@ -16,7 +14,7 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.WindowsPhone
         protected override IMvxApplication CreateApp()
         {
             //Mvx.RegisterType<IMvxUserInteraction, MvxUserInteraction>();
-            return new Core.App();
+            return new MvvmCross.Plugins.UserInteraction.Examples.App();
         }
 		
         protected override IMvxTrace CreateDebugTrace()
