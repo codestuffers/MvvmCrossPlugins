@@ -1,7 +1,7 @@
 ﻿using Cirrious.CrossCore;
 using Cirrious.CrossCore.Plugins;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction
+namespace codestuffers.MvvmCross.Plugins.UserInteraction
 {
     /// <summary>
     /// Loads the UserInteraction plugin

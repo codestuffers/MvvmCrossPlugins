@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction
+namespace codestuffers.MvvmCross.Plugins.UserInteraction
 {
     /// <summary>
     /// Provides user interaction functionality in a cross platform way

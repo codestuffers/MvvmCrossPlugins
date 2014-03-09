@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using Cirrious.CrossCore.Platform;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Droid
+namespace codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid
 {
     public class DebugTrace : IMvxTrace
     {

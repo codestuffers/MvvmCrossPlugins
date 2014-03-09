@@ -5,27 +5,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserInteraction", "UserInte
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{4A72A899-50C1-4A22-909A-AFE7AB1680C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Core", "UserInteraction\Examples\Core\Examples.Core.csproj", "{F0F9C154-6855-410F-99AE-A046EFF40B59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.UserInteraction.Examples", "UserInteraction\Examples\Core\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.csproj", "{F0F9C154-6855-410F-99AE-A046EFF40B59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Droid", "UserInteraction\Examples\Examples.Droid\Examples.Droid.csproj", "{BF3F7085-407F-484E-8C09-D282AB9DEA05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid", "UserInteraction\Examples\Examples.Droid\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid.csproj", "{BF3F7085-407F-484E-8C09-D282AB9DEA05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Touch", "UserInteraction\Examples\Examples.Touch\Examples.Touch.csproj", "{C899AE1F-6864-40E2-8F14-517B11CE8468}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Touch", "UserInteraction\Examples\Examples.Touch\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Touch.csproj", "{C899AE1F-6864-40E2-8F14-517B11CE8468}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInteraction.Core", "UserInteraction\Core\UserInteraction.Core.csproj", "{BB6519DA-DA8F-40E6-8B05-B96887074492}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.UserInteraction", "UserInteraction\Core\codestuffers.MvvmCross.Plugins.UserInteraction.csproj", "{BB6519DA-DA8F-40E6-8B05-B96887074492}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInteraction.Droid", "UserInteraction\Droid\UserInteraction.Droid.csproj", "{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.UserInteraction.Droid", "UserInteraction\Droid\codestuffers.MvvmCross.Plugins.UserInteraction.Droid.csproj", "{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInteraction.Touch", "UserInteraction\UserInteraction.Touch\UserInteraction.Touch.csproj", "{0FEAF596-628C-469A-A273-ED151B2BD491}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.UserInteraction.Touch", "UserInteraction\UserInteraction.Touch\codestuffers.MvvmCross.Plugins.UserInteraction.Touch.csproj", "{0FEAF596-628C-469A-A273-ED151B2BD491}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feedback Dialog", "Feedback Dialog", "{FEAAA8F6-F978-47D4-9942-0ECF9D48DB1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedbackDialog.Core", "FeedbackDialog\FeedbackDialog.Core\FeedbackDialog.Core.csproj", "{B9290266-2922-4BC4-97B6-D4C5E018A30C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog", "FeedbackDialog\FeedbackDialog.Core\codestuffers.MvvmCross.Plugins.FeedbackDialog.csproj", "{B9290266-2922-4BC4-97B6-D4C5E018A30C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{C551EB0A-0CF1-4CB0-B64F-1EF57FB7C600}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedbackDialog.Examples.Core", "FeedbackDialog\Examples\FeedbackDialog.Examples.Core\FeedbackDialog.Examples.Core.csproj", "{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples", "FeedbackDialog\Examples\FeedbackDialog.Examples.Core\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.csproj", "{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedbackDialog.Examples.Touch", "FeedbackDialog\Examples\FeedbackDialog.Examples.Touch\FeedbackDialog.Examples.Touch.csproj", "{AB8E669D-3B54-41C5-9FC0-8F50640AFE36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Touch", "FeedbackDialog\Examples\FeedbackDialog.Examples.Touch\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Touch.csproj", "{AB8E669D-3B54-41C5-9FC0-8F50640AFE36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -198,7 +198,7 @@ Global
 		{AB8E669D-3B54-41C5-9FC0-8F50640AFE36} = {C551EB0A-0CF1-4CB0-B64F-1EF57FB7C600}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = UserInteraction\Examples\Core\Examples.Core.csproj
+		StartupItem = UserInteraction\Examples\Core\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.csproj
 		description = Cross platform user interface plugin that makes showing alert boxes, dialog boxes, and other UI related tasks simpler.
 		version = 0.1.0
 	EndGlobalSection

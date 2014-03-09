@@ -1,9 +1,9 @@
 ﻿using System;
-using codestuffers.MvvmCrossPlugins.UserInteraction;
+using codestuffers.MvvmCross.Plugins.UserInteraction;
 using Cirrious.CrossCore.Core;
 using MonoTouch.UIKit;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction.Touch
+namespace codestuffers.MvvmCross.Plugins.UserInteraction.Touch
 {
     /// <summary>
     /// Provides user interaction functionality in a cross platform way

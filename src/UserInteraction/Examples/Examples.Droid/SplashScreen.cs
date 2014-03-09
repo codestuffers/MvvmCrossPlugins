@@ -2,7 +2,7 @@ using Android.App;
 using Android.Content.PM;
 using Cirrious.MvvmCross.Droid.Views;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Droid
+namespace codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid
 {
     [Activity(
 		Label = "Examples.Droid"

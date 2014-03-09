@@ -1,4 +1,4 @@
-﻿namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
+﻿namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
 {
     /// <summary>
     /// Handles loading and saving of feedback dialog data

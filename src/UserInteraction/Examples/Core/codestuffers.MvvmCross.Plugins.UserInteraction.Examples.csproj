@@ -8,8 +8,8 @@
     <ProjectGuid>{F0F9C154-6855-410F-99AE-A046EFF40B59}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core</RootNamespace>
-    <AssemblyName>codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core</AssemblyName>
+    <RootNamespace>codestuffers.MvvmCross.Plugins.UserInteraction.Examples</RootNamespace>
+    <AssemblyName>codestuffers.MvvmCross.Plugins.UserInteraction.Examples</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile158</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -58,9 +58,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\UserInteraction.Core.csproj">
+    <ProjectReference Include="..\..\Core\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
       <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
-      <Name>UserInteraction.Core</Name>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

@@ -2,7 +2,7 @@
 using Cirrious.CrossCore.Core;
 using Cirrious.CrossCore.Plugins;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction.Droid
+namespace codestuffers.MvvmCross.Plugins.UserInteraction.Droid
 {
     /// <summary>
     /// Defines the platform specific version of the plugin

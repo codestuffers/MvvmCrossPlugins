@@ -1,4 +1,4 @@
-﻿namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
+﻿namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
 {
     /// <summary>
     /// Feedback Dialog plugin interface

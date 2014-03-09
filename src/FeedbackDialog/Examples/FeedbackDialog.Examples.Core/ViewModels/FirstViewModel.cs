@@ -1,6 +1,6 @@
 using System.Windows.Input;
 using Cirrious.MvvmCross.ViewModels;
-using codestuffers.MvvmCrossPlugins.FeedbackDialog;
+using codestuffers.MvvmCross.Plugins.FeedbackDialog;
 
 namespace FeedbackDialog.Examples.Core.ViewModels
 {

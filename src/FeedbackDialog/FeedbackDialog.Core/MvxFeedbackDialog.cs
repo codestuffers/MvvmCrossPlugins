@@ -1,9 +1,9 @@
 ﻿using System;
 using Cirrious.MvvmCross.Plugins.Email;
 using Cirrious.MvvmCross.Plugins.WebBrowser;
-using codestuffers.MvvmCrossPlugins.UserInteraction;
+using codestuffers.MvvmCross.Plugins.UserInteraction;
 
-namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
+namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
 {
     /// <summary>
     /// Feedback dialog

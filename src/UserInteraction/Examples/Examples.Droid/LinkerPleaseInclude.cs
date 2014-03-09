@@ -3,7 +3,7 @@ using System.Windows.Input;
 using Android.Views;
 using Android.Widget;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Droid
+namespace codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid
 {
     // This class is never actually executed, but when Xamarin linking is enabled it does how to ensure types and properties
     // are preserved in the deployed app
@@ -42,7 +42,9 @@ namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Droid
 
         public void Include(INotifyCollectionChanged changed)
         {
+            #pragma warning disable 219
             changed.CollectionChanged += (s,e) => { var test = string.Format("{0}{1}{2}{3}{4}", e.Action,e.NewItems, e.NewStartingIndex, e.OldItems, e.OldStartingIndex); } ;
+            #pragma warning restore 219
         }
 
         public void Include(ICommand command)

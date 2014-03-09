@@ -1,7 +1,7 @@
 ﻿using Cirrious.CrossCore.Plugins;
-using codestuffers.MvvmCrossPlugins.UserInteraction.Touch;
+using codestuffers.MvvmCross.Plugins.UserInteraction.Touch;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Touch.Bootstrap
+namespace codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Touch.Bootstrap
 {
     public class UserInteractionBootstrap : MvxLoaderPluginBootstrapAction<PluginLoader, Plugin>
     {

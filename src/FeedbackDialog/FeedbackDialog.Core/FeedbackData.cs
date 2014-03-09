@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
+namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
 {
     /// <summary>
     /// Holds the data needed by the feedback dialog to operate

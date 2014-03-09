@@ -4,7 +4,7 @@ using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.Touch.Platform;
 using Cirrious.CrossCore.Plugins;
 using System;
-using codestuffers.MvvmCrossPlugins.FeedbackDialog;
+using codestuffers.MvvmCross.Plugins.FeedbackDialog;
 
 namespace FeedbackDialog.Examples.Touch
 {

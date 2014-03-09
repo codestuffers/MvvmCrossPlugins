@@ -1,7 +1,7 @@
 using Cirrious.CrossCore.IoC;
-using codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels;
+using codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Core.ViewModels;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core
+namespace codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Core
 {
     public class App : Cirrious.MvvmCross.ViewModels.MvxApplication
     {

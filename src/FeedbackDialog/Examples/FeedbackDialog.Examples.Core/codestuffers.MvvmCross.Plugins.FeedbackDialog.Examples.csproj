@@ -8,8 +8,8 @@
     <ProjectGuid>{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FeedbackDialog.Examples.Core</RootNamespace>
-    <AssemblyName>FeedbackDialog.Examples.Core</AssemblyName>
+    <RootNamespace>codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples</RootNamespace>
+    <AssemblyName>codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile158</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -58,13 +58,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\UserInteraction\Core\UserInteraction.Core.csproj">
-      <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
-      <Name>UserInteraction.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\FeedbackDialog.Core\FeedbackDialog.Core.csproj">
+    <ProjectReference Include="..\..\FeedbackDialog.Core\codestuffers.MvvmCross.Plugins.FeedbackDialog.csproj">
       <Project>{B9290266-2922-4BC4-97B6-D4C5E018A30C}</Project>
-      <Name>FeedbackDialog.Core</Name>
+      <Name>codestuffers.MvvmCross.Plugins.FeedbackDialog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\UserInteraction\Core\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
+      <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

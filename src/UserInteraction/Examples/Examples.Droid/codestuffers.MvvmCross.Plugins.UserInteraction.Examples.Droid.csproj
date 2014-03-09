@@ -8,14 +8,14 @@
     <ProjectGuid>{BF3F7085-407F-484E-8C09-D282AB9DEA05}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Droid</RootNamespace>
+    <RootNamespace>codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid</RootNamespace>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
-    <AssemblyName>Examples.Droid</AssemblyName>
+    <AssemblyName>codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ReleaseVersion>0.1.0</ReleaseVersion>
@@ -104,17 +104,17 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Core\Examples.Core.csproj">
-      <Project>{F0F9C154-6855-410F-99AE-A046EFF40B59}</Project>
-      <Name>Examples.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Core\UserInteraction.Core.csproj">
+    <ProjectReference Include="..\..\Core\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
       <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
-      <Name>UserInteraction.Core</Name>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Droid\UserInteraction.Droid.csproj">
+    <ProjectReference Include="..\..\Droid\codestuffers.MvvmCross.Plugins.UserInteraction.Droid.csproj">
       <Project>{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}</Project>
-      <Name>UserInteraction.Droid</Name>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.csproj">
+      <Project>{F0F9C154-6855-410F-99AE-A046EFF40B59}</Project>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction.Examples</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

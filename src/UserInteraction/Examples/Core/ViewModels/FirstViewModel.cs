@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Cirrious.MvvmCross.ViewModels;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels
+namespace codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Core.ViewModels
 {
     public class FirstViewModel : MvxViewModel
     {

@@ -2,9 +2,9 @@
 using Cirrious.CrossCore;
 using Cirrious.CrossCore.Plugins;
 using Cirrious.MvvmCross.Plugins.File;
-using codestuffers.MvvmCrossPlugins.UserInteraction;
+using codestuffers.MvvmCross.Plugins.UserInteraction;
 
-namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
+namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
 {
     /// <summary>
     /// Loads the UserInteraction plugin

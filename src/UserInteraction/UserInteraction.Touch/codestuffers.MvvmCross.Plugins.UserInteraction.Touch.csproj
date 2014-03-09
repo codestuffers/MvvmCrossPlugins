@@ -8,9 +8,9 @@
     <ProjectGuid>{0FEAF596-628C-469A-A273-ED151B2BD491}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>codestuffers.MvvmCrossPlugins.UserInteraction.Touch</RootNamespace>
+    <RootNamespace>codestuffers.MvvmCross.Plugins.UserInteraction.Touch</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>codestuffers.MvvmCrossPlugins.UserInteraction.Touch</AssemblyName>
+    <AssemblyName>codestuffers.MvvmCross.Plugins.UserInteraction.Touch</AssemblyName>
     <ReleaseVersion>0.1.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -64,9 +64,9 @@
     <Compile Include="MvxUserInteraction.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\UserInteraction.Core.csproj">
+    <ProjectReference Include="..\Core\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
       <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
-      <Name>UserInteraction.Core</Name>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

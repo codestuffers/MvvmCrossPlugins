@@ -1,4 +1,4 @@
-﻿namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
+﻿namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
 {
     /// <summary>
     /// Defines possible actions that can be taken by the feedback dialog

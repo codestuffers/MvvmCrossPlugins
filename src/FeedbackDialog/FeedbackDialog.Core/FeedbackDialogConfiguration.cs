@@ -1,6 +1,6 @@
 ﻿using Cirrious.CrossCore.Plugins;
 
-namespace codestuffers.MvvmCrossPlugins.FeedbackDialog
+namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
 {
     /// <summary>
     /// Configuration data for the Feedback Dialog plugin

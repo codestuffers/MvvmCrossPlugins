@@ -2,7 +2,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction
+namespace codestuffers.MvvmCross.Plugins.UserInteraction
 {
     /// <summary>
     /// Helper class that executes a task with a progress bar

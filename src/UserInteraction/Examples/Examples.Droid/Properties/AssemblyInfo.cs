@@ -4,11 +4,11 @@ using Android.App;
 
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
-[assembly: AssemblyTitle("codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Droid")]
+[assembly: AssemblyTitle("codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("codestuffers, LLC")]
-[assembly: AssemblyProduct("codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Droid")]
+[assembly: AssemblyProduct("codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Droid")]
 [assembly: AssemblyCopyright("Copyright ©codestuffers, LLC  2014")]
 [assembly: AssemblyTrademark("codestuffers, LLC")]
 [assembly: AssemblyCulture("")]

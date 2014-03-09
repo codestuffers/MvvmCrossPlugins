@@ -5,7 +5,7 @@ using Cirrious.MvvmCross.Touch.Views;
 using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
-using codestuffers.MvvmCrossPlugins.UserInteraction.Examples.Core.ViewModels;
+using codestuffers.MvvmCross.Plugins.UserInteraction.Examples.Core.ViewModels;
 
 namespace Examples.Touch.Views
 {

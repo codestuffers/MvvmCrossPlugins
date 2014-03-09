@@ -5,9 +5,9 @@ using Android.App;
 using Android.Widget;
 using Cirrious.CrossCore.Core;
 using Cirrious.CrossCore.Droid.Platform;
-using codestuffers.MvvmCrossPlugins.UserInteraction;
+using codestuffers.MvvmCross.Plugins.UserInteraction;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction.Droid
+namespace codestuffers.MvvmCross.Plugins.UserInteraction.Droid
 {
     /// <summary>
     /// Provides user interaction functionality in a cross platform way

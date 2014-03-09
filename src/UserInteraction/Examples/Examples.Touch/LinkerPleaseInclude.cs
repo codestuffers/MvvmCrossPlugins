@@ -69,7 +69,9 @@ namespace Examples.Touch
 
         public void Include(INotifyCollectionChanged changed)
         {
+            #pragma warning disable 219
             changed.CollectionChanged += (s,e) => { var test = string.Format("{0}{1}{2}{3}{4}", e.Action,e.NewItems, e.NewStartingIndex, e.OldItems, e.OldStartingIndex); } ;
+            #pragma warning restore 219
         }
 		
         public void Include(ICommand command)

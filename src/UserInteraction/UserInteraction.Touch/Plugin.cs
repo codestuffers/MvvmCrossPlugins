@@ -2,7 +2,7 @@
 using Cirrious.CrossCore.Core;
 using Cirrious.CrossCore.Plugins;
 
-namespace codestuffers.MvvmCrossPlugins.UserInteraction.Touch
+namespace codestuffers.MvvmCross.Plugins.UserInteraction.Touch
 {
     /// <summary>
     /// Defines the platform specific version of the plugin
