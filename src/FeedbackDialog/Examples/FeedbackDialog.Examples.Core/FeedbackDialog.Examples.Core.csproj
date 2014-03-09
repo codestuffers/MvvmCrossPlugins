@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
@@ -16,6 +16,8 @@
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -56,11 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\UserInteraction\Core\UserInteraction.Core.csproj">
-      <Project>{bb6519da-da8f-40e6-8b05-b96887074492}</Project>
+      <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
       <Name>UserInteraction.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\FeedbackDialog.Core\FeedbackDialog.Core.csproj">
-      <Project>{b9290266-2922-4bc4-97b6-d4c5e018a30c}</Project>
+      <Project>{B9290266-2922-4BC4-97B6-D4C5E018A30C}</Project>
       <Name>FeedbackDialog.Core</Name>
     </ProjectReference>
   </ItemGroup>
