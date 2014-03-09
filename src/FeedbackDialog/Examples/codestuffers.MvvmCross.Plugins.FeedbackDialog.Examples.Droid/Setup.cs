@@ -1,25 +1,22 @@
-using MonoTouch.UIKit;
+using Android.Content;
 using Cirrious.CrossCore.Platform;
+using Cirrious.MvvmCross.Droid.Platform;
 using Cirrious.MvvmCross.ViewModels;
-using Cirrious.MvvmCross.Touch.Platform;
 using Cirrious.CrossCore.Plugins;
 using System;
-using codestuffers.MvvmCross.Plugins.FeedbackDialog;
-using codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples;
 
-namespace FeedbackDialog.Examples.Touch
+namespace codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid
 {
-	public class Setup : MvxTouchSetup
-	{
-		public Setup(MvxApplicationDelegate applicationDelegate, UIWindow window)
-            : base(applicationDelegate, window)
-		{
-		}
+    public class Setup : MvxAndroidSetup
+    {
+        public Setup(Context applicationContext) : base(applicationContext)
+        {
+        }
 
-		protected override IMvxApplication CreateApp ()
-		{
-			return new App();
-		}
+        protected override IMvxApplication CreateApp()
+        {
+            return new App();
+        }
 		
         protected override IMvxTrace CreateDebugTrace()
         {
@@ -40,5 +37,5 @@ namespace FeedbackDialog.Examples.Touch
 
             return null;
         }
-	}
+    }
 }

@@ -138,15 +138,15 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
+    <ProjectReference Include="..\..\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
       <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
       <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\UserInteraction.Touch\codestuffers.MvvmCross.Plugins.UserInteraction.Touch.csproj">
+    <ProjectReference Include="..\..\codestuffers.MvvmCross.Plugins.UserInteraction.Touch\codestuffers.MvvmCross.Plugins.UserInteraction.Touch.csproj">
       <Project>{0FEAF596-628C-469A-A273-ED151B2BD491}</Project>
       <Name>codestuffers.MvvmCross.Plugins.UserInteraction.Touch</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Core\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.csproj">
+    <ProjectReference Include="..\codestuffers.MvvmCross.Plugins.UserInteraction.Examples\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.csproj">
       <Project>{F0F9C154-6855-410F-99AE-A046EFF40B59}</Project>
       <Name>codestuffers.MvvmCross.Plugins.UserInteraction.Examples</Name>
     </ProjectReference>

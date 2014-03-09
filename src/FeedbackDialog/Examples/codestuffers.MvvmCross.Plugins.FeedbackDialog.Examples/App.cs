@@ -1,6 +1,7 @@
 using Cirrious.CrossCore.IoC;
+using codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.ViewModels;
 
-namespace FeedbackDialog.Examples.Core
+namespace codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples
 {
     public class App : Cirrious.MvvmCross.ViewModels.MvxApplication
     {
@@ -11,7 +12,7 @@ namespace FeedbackDialog.Examples.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 				
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<FirstViewModel>();
         }
     }
 }

@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plug
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Touch", "FeedbackDialog\Examples\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Touch\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Touch.csproj", "{AB8E669D-3B54-41C5-9FC0-8F50640AFE36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid", "FeedbackDialog\Examples\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid.csproj", "{9AD05DB7-24DD-4656-A15D-696D65E011ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,22 @@ Global
 		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Release|iPhone.Build.0 = Release|Any CPU
 		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Release|iPhone.Build.0 = Release|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{AB8E669D-3B54-41C5-9FC0-8F50640AFE36}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{AB8E669D-3B54-41C5-9FC0-8F50640AFE36}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{AB8E669D-3B54-41C5-9FC0-8F50640AFE36}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
@@ -196,9 +214,10 @@ Global
 		{C551EB0A-0CF1-4CB0-B64F-1EF57FB7C600} = {FEAAA8F6-F978-47D4-9942-0ECF9D48DB1E}
 		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E} = {C551EB0A-0CF1-4CB0-B64F-1EF57FB7C600}
 		{AB8E669D-3B54-41C5-9FC0-8F50640AFE36} = {C551EB0A-0CF1-4CB0-B64F-1EF57FB7C600}
+		{9AD05DB7-24DD-4656-A15D-696D65E011ED} = {C551EB0A-0CF1-4CB0-B64F-1EF57FB7C600}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = UserInteraction\Examples\Core\codestuffers.MvvmCross.Plugins.UserInteraction.Examples.csproj
+		StartupItem = FeedbackDialog\Examples\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid.csproj
 		description = Cross platform user interface plugin that makes showing alert boxes, dialog boxes, and other UI related tasks simpler.
 		version = 0.1.0
 	EndGlobalSection

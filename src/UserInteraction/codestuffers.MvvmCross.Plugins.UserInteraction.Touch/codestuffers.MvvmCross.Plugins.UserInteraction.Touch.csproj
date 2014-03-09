@@ -64,7 +64,7 @@
     <Compile Include="MvxUserInteraction.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
+    <ProjectReference Include="..\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
       <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
       <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
     </ProjectReference>

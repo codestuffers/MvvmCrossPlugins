@@ -2,7 +2,7 @@ using System.Windows.Input;
 using Cirrious.MvvmCross.ViewModels;
 using codestuffers.MvvmCross.Plugins.FeedbackDialog;
 
-namespace FeedbackDialog.Examples.Core.ViewModels
+namespace codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.ViewModels
 {
     public class FirstViewModel : MvxViewModel
     {

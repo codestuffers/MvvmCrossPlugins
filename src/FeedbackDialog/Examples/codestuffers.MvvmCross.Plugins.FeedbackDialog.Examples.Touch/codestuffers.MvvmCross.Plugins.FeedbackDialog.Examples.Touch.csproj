@@ -162,19 +162,19 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\FeedbackDialog.Core\codestuffers.MvvmCross.Plugins.FeedbackDialog.csproj">
+    <ProjectReference Include="..\..\codestuffers.MvvmCross.Plugins.FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.csproj">
       <Project>{B9290266-2922-4BC4-97B6-D4C5E018A30C}</Project>
       <Name>codestuffers.MvvmCross.Plugins.FeedbackDialog</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\UserInteraction\Core\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
+    <ProjectReference Include="..\..\..\UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
       <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
       <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\UserInteraction\UserInteraction.Touch\codestuffers.MvvmCross.Plugins.UserInteraction.Touch.csproj">
+    <ProjectReference Include="..\..\..\UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.Touch\codestuffers.MvvmCross.Plugins.UserInteraction.Touch.csproj">
       <Project>{0FEAF596-628C-469A-A273-ED151B2BD491}</Project>
       <Name>codestuffers.MvvmCross.Plugins.UserInteraction.Touch</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FeedbackDialog.Examples.Core\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.csproj">
+    <ProjectReference Include="..\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.csproj">
       <Project>{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}</Project>
       <Name>codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples</Name>
     </ProjectReference>

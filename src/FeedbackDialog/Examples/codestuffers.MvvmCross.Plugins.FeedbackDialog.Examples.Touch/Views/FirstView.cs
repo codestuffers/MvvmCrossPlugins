@@ -5,7 +5,7 @@ using Cirrious.MvvmCross.Touch.Views;
 using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
-using FeedbackDialog.Examples.Core.ViewModels;
+using codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.ViewModels;
 
 namespace FeedbackDialog.Examples.Touch.Views
 {
