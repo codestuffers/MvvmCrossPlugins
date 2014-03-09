@@ -36,6 +36,7 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
 		{
             if (_dataService.AppWasOpened(_configuration.ShowFeedbackAfterApplicationOpenCount) == FeedbackAction.OpenDialog)
             {
+                _dataService.DialogWasShown();
                 _userInteraction.ShowDialog(_configuration.DialogBody, _configuration.DialogTitle,
                     _configuration.LoveItButtonText, _configuration.HateItButtonText, HandleLoveIt, HandleHateIt);
 			}
@@ -55,8 +56,6 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
         /// </summary>
         private void HandleLoveIt()
         {
-            _dataService.DialogWasShown();
-
             _webBrowser.ShowWebPage(_configuration.ApplicationReviewUrl);
         }
 
@@ -65,8 +64,6 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
         /// </summary>
         private void HandleHateIt()
         {
-            _dataService.DialogWasShown();
-
             _composeEmailTask.ComposeEmail(_configuration.FeedbackEmailAddress, null, 
                 _configuration.FeedbackSubject, _configuration.FeedbackBody, false);
         }

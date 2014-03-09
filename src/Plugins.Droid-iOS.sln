@@ -217,7 +217,7 @@ Global
 		{9AD05DB7-24DD-4656-A15D-696D65E011ED} = {C551EB0A-0CF1-4CB0-B64F-1EF57FB7C600}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = FeedbackDialog\Examples\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid.csproj
+		StartupItem = FeedbackDialog\Examples\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Touch\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Touch.csproj
 		description = Cross platform user interface plugin that makes showing alert boxes, dialog boxes, and other UI related tasks simpler.
 		version = 0.1.0
 	EndGlobalSection
