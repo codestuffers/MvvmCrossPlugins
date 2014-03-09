@@ -23,7 +23,7 @@
     </metadata>
     <files>     
         <!-- PCL -->
-        <file src="..\..\Artifacts\FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.dll" 
+        <file src="..\..\Artifacts\codestuffers.MvvmCross.Plugins.FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.dll" 
             target="lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\codestuffers.MvvmCross.Plugins.FeedbackDialog.dll" />
 
         <!-- phone -->

@@ -35,7 +35,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\Artifacts\codestuffers.MvvmCrossPlugins.UserInteraction.WindowsPhone\</OutputPath>
+    <OutputPath>..\..\..\Artifacts\codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone\</OutputPath>
     <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
     <NoStdLib>true</NoStdLib>
     <NoConfig>true</NoConfig>
