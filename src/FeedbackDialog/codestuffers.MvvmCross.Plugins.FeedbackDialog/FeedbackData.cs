@@ -12,13 +12,13 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
         /// Numer of times the app has been opened
         /// </summary>
         [JsonProperty]
-        private int TimesAppHasStarted { get; set; }
+        internal int TimesAppHasStarted { get; set; }
 
         /// <summary>
         /// Date of the first time the application was opened
         /// </summary>
         [JsonProperty]
-        private DateTime AppInstallDate { get; set; }
+        internal DateTime AppInstallDate { get; set; }
 
         /// <summary>
         /// Has the dialog been opened yet?

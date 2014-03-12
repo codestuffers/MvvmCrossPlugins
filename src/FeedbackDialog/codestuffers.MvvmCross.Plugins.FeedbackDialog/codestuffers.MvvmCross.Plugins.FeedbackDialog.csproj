@@ -54,6 +54,8 @@
     <Compile Include="..\VersionInfo.cs">
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
+    <Compile Include="OpenCriteria\RequiredOpensCriteria.cs" />
+    <Compile Include="OpenCriteria\IOpenDialogCriteria.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
@@ -98,5 +100,8 @@
       <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
       <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OpenCriteria\" />
   </ItemGroup>
 </Project>

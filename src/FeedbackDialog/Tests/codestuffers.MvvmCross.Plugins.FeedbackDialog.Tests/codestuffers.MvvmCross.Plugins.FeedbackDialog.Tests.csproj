@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F87530AE-77E3-4261-822B-2B919130AAB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>codestuffers.MvvmCross.Plugins.FeedbackDialog.Tests</RootNamespace>
+    <AssemblyName>codestuffers.MvvmCross.Plugins.FeedbackDialog.Tests</AssemblyName>
+    <ReleaseVersion>0.1.0</ReleaseVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework" />
+    <Reference Include="Cirrious.CrossCore.Wpf">
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\net45\Cirrious.CrossCore.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore">
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\net45\Cirrious.CrossCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Localization">
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Json">
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Plugin.Json.3.1.1\lib\net45\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Plugin.Json.3.1.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.File">
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Plugin.File.3.1.1\lib\net45\Cirrious.MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.File.Wpf">
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Plugin.File.3.1.1\lib\net45\Cirrious.MvvmCross.Plugins.File.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.WebBrowser">
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Plugin.WebBrowser.3.1.1\lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\Cirrious.MvvmCross.Plugins.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Email">
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Plugin.Email.3.1.1\lib\net45\Cirrious.MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Email.Wpf">
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Plugin.Email.3.1.1\lib\net45\Cirrious.MvvmCross.Plugins.Email.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions">
+      <HintPath>..\..\..\packages\FluentAssertions.2.2.0.0\lib\net45\FluentAssertions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OpenCriteria\RequiredOpensCriteriaTests.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\codestuffers.MvvmCross.Plugins.FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.csproj">
+      <Project>{B9290266-2922-4BC4-97B6-D4C5E018A30C}</Project>
+      <Name>codestuffers.MvvmCross.Plugins.FeedbackDialog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.csproj">
+      <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
+      <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OpenCriteria\" />
+  </ItemGroup>
+</Project>

@@ -15,3 +15,5 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTrademark("codestuffers, LLC")]
 [assembly: AssemblyCulture("")]
 [assembly: NeutralResourcesLanguage("en")]
+
+[assembly: InternalsVisibleTo("codestuffers.MvvmCross.Plugins.FeedbackDialog.Tests")]
