@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plug
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog", "FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.csproj", "{B9290266-2922-4BC4-97B6-D4C5E018A30C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog.Droid", "FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.Droid\codestuffers.MvvmCross.Plugins.FeedbackDialog.Droid.csproj", "{0D62614A-0C4D-4D46-9D5B-9BE16593DD3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D62614A-0C4D-4D46-9D5B-9BE16593DD3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D62614A-0C4D-4D46-9D5B-9BE16593DD3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D62614A-0C4D-4D46-9D5B-9BE16593DD3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D62614A-0C4D-4D46-9D5B-9BE16593DD3F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,6 +75,7 @@ Global
 		{BF3F7085-407F-484E-8C09-D282AB9DEA05} = {52829726-DD32-452D-A370-3388AC595E41}
 		{1A71D188-A6FF-4EE0-B6EE-97F9BF38A489} = {64A4A221-EFC6-42EB-A2EC-423B85C65BA4}
 		{B9290266-2922-4BC4-97B6-D4C5E018A30C} = {64A4A221-EFC6-42EB-A2EC-423B85C65BA4}
+		{0D62614A-0C4D-4D46-9D5B-9BE16593DD3F} = {64A4A221-EFC6-42EB-A2EC-423B85C65BA4}
 		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E} = {1A71D188-A6FF-4EE0-B6EE-97F9BF38A489}
 		{9AD05DB7-24DD-4656-A15D-696D65E011ED} = {1A71D188-A6FF-4EE0-B6EE-97F9BF38A489}
 	EndGlobalSection

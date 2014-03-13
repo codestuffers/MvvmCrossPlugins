@@ -23,7 +23,9 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
                 () => Mvx.CallbackWhenRegistered<IMvxUserInteraction>(() =>
                 {
                     Mvx.ConstructAndRegisterSingleton<IFeedbackDataService, FeedbackDataService>();
-                    Mvx.ConstructAndRegisterSingleton<IMvxFeedbackDialog, MvxFeedbackDialog>();
+                    var manager = Mvx.Resolve<IMvxPluginManager>();
+                    manager.EnsurePlatformAdaptionLoaded<PluginLoader>();
+
                     ((MvxFeedbackDialog) Mvx.GetSingleton<IMvxFeedbackDialog>()).SetConfiguration(_configuration);
                 }));
         }

@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plug
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone", "UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone\codestuffers.MvvmCross.Plugins.UserInteraction.WindowsPhone.csproj", "{72CB08FC-0F5B-4880-8B5F-B1DE7F1429CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog.WindowsPhone", "FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.WindowsPhone\codestuffers.MvvmCross.Plugins.FeedbackDialog.WindowsPhone.csproj", "{28227C52-DC58-4710-9387-3AE3BFE61C7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -124,6 +126,18 @@ Global
 		{72CB08FC-0F5B-4880-8B5F-B1DE7F1429CF}.Release|ARM.Build.0 = Release|ARM
 		{72CB08FC-0F5B-4880-8B5F-B1DE7F1429CF}.Release|x86.ActiveCfg = Release|x86
 		{72CB08FC-0F5B-4880-8B5F-B1DE7F1429CF}.Release|x86.Build.0 = Release|x86
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Debug|ARM.Build.0 = Debug|ARM
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Debug|x86.ActiveCfg = Debug|x86
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Debug|x86.Build.0 = Debug|x86
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Release|ARM.ActiveCfg = Release|ARM
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Release|ARM.Build.0 = Release|ARM
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Release|x86.ActiveCfg = Release|x86
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,6 +151,7 @@ Global
 		{82BE3A41-4835-4ACE-A6C8-445131F73850} = {6DBEACAA-387F-4AE8-B717-2012AA40B426}
 		{9A5A796E-FD9A-4C27-AB2F-DDFF9C3BCCF2} = {77956E28-6DDD-4F44-AFA7-F991D4BC5C11}
 		{B9290266-2922-4BC4-97B6-D4C5E018A30C} = {77956E28-6DDD-4F44-AFA7-F991D4BC5C11}
+		{28227C52-DC58-4710-9387-3AE3BFE61C7A} = {77956E28-6DDD-4F44-AFA7-F991D4BC5C11}
 		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E} = {9A5A796E-FD9A-4C27-AB2F-DDFF9C3BCCF2}
 		{5C4FB14A-19B3-4DFD-AAE9-1169F4DF5078} = {9A5A796E-FD9A-4C27-AB2F-DDFF9C3BCCF2}
 	EndGlobalSection

@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("codestuffers.MvvmCross.Plugins.UserInteraction.Droid.Resource", IsApplication=false)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("codestuffers.MvvmCross.Plugins.FeedbackDialog.Droid.Resource", IsApplication=false)]
 
-namespace codestuffers.MvvmCross.Plugins.UserInteraction.Droid
+namespace codestuffers.MvvmCross.Plugins.FeedbackDialog.Droid
 {
 	
 	

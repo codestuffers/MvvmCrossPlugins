@@ -54,7 +54,7 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
         /// <summary>
         /// Handle a click of the Love it! button
         /// </summary>
-        private void HandleLoveIt()
+        protected virtual void HandleLoveIt()
         {
             _webBrowser.ShowWebPage(_configuration.ApplicationReviewUrl);
         }
@@ -62,7 +62,7 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
         /// <summary>
         /// Handle a click of the Hate it... button
         /// </summary>
-        private void HandleHateIt()
+        protected virtual void HandleHateIt()
         {
             _composeEmailTask.ComposeEmail(_configuration.FeedbackEmailAddress, null, 
                 _configuration.FeedbackSubject, _configuration.FeedbackBody, false);
