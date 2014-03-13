@@ -36,6 +36,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plug
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog.WindowsPhone", "FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.WindowsPhone\codestuffers.MvvmCross.Plugins.FeedbackDialog.WindowsPhone.csproj", "{28227C52-DC58-4710-9387-3AE3BFE61C7A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0F9A3B68-EACE-49C2-BB88-84358CB488F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog.Tests", "FeedbackDialog\Tests\codestuffers.MvvmCross.Plugins.FeedbackDialog.Tests\codestuffers.MvvmCross.Plugins.FeedbackDialog.Tests.csproj", "{F87530AE-77E3-4261-822B-2B919130AAB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -138,6 +142,14 @@ Global
 		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Release|ARM.Build.0 = Release|ARM
 		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Release|x86.ActiveCfg = Release|x86
 		{28227C52-DC58-4710-9387-3AE3BFE61C7A}.Release|x86.Build.0 = Release|x86
+		{F87530AE-77E3-4261-822B-2B919130AAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F87530AE-77E3-4261-822B-2B919130AAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F87530AE-77E3-4261-822B-2B919130AAB6}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F87530AE-77E3-4261-822B-2B919130AAB6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F87530AE-77E3-4261-822B-2B919130AAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F87530AE-77E3-4261-822B-2B919130AAB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F87530AE-77E3-4261-822B-2B919130AAB6}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F87530AE-77E3-4261-822B-2B919130AAB6}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,7 +164,9 @@ Global
 		{9A5A796E-FD9A-4C27-AB2F-DDFF9C3BCCF2} = {77956E28-6DDD-4F44-AFA7-F991D4BC5C11}
 		{B9290266-2922-4BC4-97B6-D4C5E018A30C} = {77956E28-6DDD-4F44-AFA7-F991D4BC5C11}
 		{28227C52-DC58-4710-9387-3AE3BFE61C7A} = {77956E28-6DDD-4F44-AFA7-F991D4BC5C11}
+		{0F9A3B68-EACE-49C2-BB88-84358CB488F6} = {77956E28-6DDD-4F44-AFA7-F991D4BC5C11}
 		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E} = {9A5A796E-FD9A-4C27-AB2F-DDFF9C3BCCF2}
 		{5C4FB14A-19B3-4DFD-AAE9-1169F4DF5078} = {9A5A796E-FD9A-4C27-AB2F-DDFF9C3BCCF2}
+		{F87530AE-77E3-4261-822B-2B919130AAB6} = {0F9A3B68-EACE-49C2-BB88-84358CB488F6}
 	EndGlobalSection
 EndGlobal
