@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.0</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9AD05DB7-24DD-4656-A15D-696D65E011ED}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -18,7 +18,6 @@
     <AssemblyName>codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <ReleaseVersion>0.1.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -149,6 +148,10 @@
     <ProjectReference Include="..\..\..\UserInteraction\codestuffers.MvvmCross.Plugins.UserInteraction.Droid\codestuffers.MvvmCross.Plugins.UserInteraction.Droid.csproj">
       <Project>{4739F170-A5A2-4E28-8415-FDD85F6C1DCD}</Project>
       <Name>codestuffers.MvvmCross.Plugins.UserInteraction.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\codestuffers.MvvmCross.Plugins.FeedbackDialog.Droid\codestuffers.MvvmCross.Plugins.FeedbackDialog.Droid.csproj">
+      <Project>{0D62614A-0C4D-4D46-9D5B-9BE16593DD3F}</Project>
+      <Name>codestuffers.MvvmCross.Plugins.FeedbackDialog.Droid</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

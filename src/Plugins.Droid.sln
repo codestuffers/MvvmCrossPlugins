@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plug
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog.Droid", "FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.Droid\codestuffers.MvvmCross.Plugins.FeedbackDialog.Droid.csproj", "{0D62614A-0C4D-4D46-9D5B-9BE16593DD3F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5EF39550-5EA9-4E13-8882-FCFF0A0A28B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codestuffers.MvvmCross.Plugins.FeedbackDialog.Tests", "FeedbackDialog\Tests\codestuffers.MvvmCross.Plugins.FeedbackDialog.Tests\codestuffers.MvvmCross.Plugins.FeedbackDialog.Tests.csproj", "{F87530AE-77E3-4261-822B-2B919130AAB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +69,10 @@ Global
 		{F0F9C154-6855-410F-99AE-A046EFF40B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0F9C154-6855-410F-99AE-A046EFF40B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0F9C154-6855-410F-99AE-A046EFF40B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F87530AE-77E3-4261-822B-2B919130AAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F87530AE-77E3-4261-822B-2B919130AAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F87530AE-77E3-4261-822B-2B919130AAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F87530AE-77E3-4261-822B-2B919130AAB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{52829726-DD32-452D-A370-3388AC595E41} = {D2EAC95A-0E3F-49CC-9DDB-C9B9B345B0D1}
@@ -76,8 +84,10 @@ Global
 		{1A71D188-A6FF-4EE0-B6EE-97F9BF38A489} = {64A4A221-EFC6-42EB-A2EC-423B85C65BA4}
 		{B9290266-2922-4BC4-97B6-D4C5E018A30C} = {64A4A221-EFC6-42EB-A2EC-423B85C65BA4}
 		{0D62614A-0C4D-4D46-9D5B-9BE16593DD3F} = {64A4A221-EFC6-42EB-A2EC-423B85C65BA4}
+		{5EF39550-5EA9-4E13-8882-FCFF0A0A28B8} = {64A4A221-EFC6-42EB-A2EC-423B85C65BA4}
 		{033ED4D7-F90F-47E6-8F14-D43DE8640B9E} = {1A71D188-A6FF-4EE0-B6EE-97F9BF38A489}
 		{9AD05DB7-24DD-4656-A15D-696D65E011ED} = {1A71D188-A6FF-4EE0-B6EE-97F9BF38A489}
+		{F87530AE-77E3-4261-822B-2B919130AAB6} = {5EF39550-5EA9-4E13-8882-FCFF0A0A28B8}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = FeedbackDialog\Examples\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid\codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid.csproj

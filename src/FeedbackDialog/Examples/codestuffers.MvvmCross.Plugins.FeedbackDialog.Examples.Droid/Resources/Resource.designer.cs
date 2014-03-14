@@ -27,6 +27,7 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid
 		public static void UpdateIdValues()
 		{
 			global::codestuffers.MvvmCross.Plugins.UserInteraction.Droid.Resource.String.library_name = global::codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid.Resource.String.library_name;
+			global::codestuffers.MvvmCross.Plugins.FeedbackDialog.Droid.Resource.String.library_name = global::codestuffers.MvvmCross.Plugins.FeedbackDialog.Examples.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute

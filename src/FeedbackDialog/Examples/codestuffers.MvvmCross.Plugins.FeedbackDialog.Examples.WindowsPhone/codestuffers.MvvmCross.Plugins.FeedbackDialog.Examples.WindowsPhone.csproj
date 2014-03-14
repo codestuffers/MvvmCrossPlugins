@@ -216,6 +216,10 @@
       <Project>{BB6519DA-DA8F-40E6-8B05-B96887074492}</Project>
       <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\codestuffers.MvvmCross.Plugins.FeedbackDialog.WindowsPhone\codestuffers.MvvmCross.Plugins.FeedbackDialog.WindowsPhone.csproj">
+      <Project>{28227C52-DC58-4710-9387-3AE3BFE61C7A}</Project>
+      <Name>codestuffers.MvvmCross.Plugins.FeedbackDialog.WindowsPhone</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\codestuffers.MvvmCross.Plugins.FeedbackDialog\codestuffers.MvvmCross.Plugins.FeedbackDialog.csproj">
       <Project>{B9290266-2922-4BC4-97B6-D4C5E018A30C}</Project>
       <Name>codestuffers.MvvmCross.Plugins.FeedbackDialog</Name>

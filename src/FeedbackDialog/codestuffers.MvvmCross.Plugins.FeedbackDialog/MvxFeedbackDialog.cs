@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Cirrious.MvvmCross.Plugins.Email;
 using Cirrious.MvvmCross.Plugins.WebBrowser;
 using codestuffers.MvvmCross.Plugins.UserInteraction;
@@ -34,12 +35,27 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
         /// <remarks>This should be the only method your app needs to interact with the dialog</remarks>
         public void RecordAppStart()
 		{
-            if (_dataService.AppWasOpened(_configuration.ShowFeedbackAfterApplicationOpenCount) == FeedbackAction.OpenDialog)
+            var data = _dataService.GetData();
+
+            if (data.DialogWasShown)
             {
-                _dataService.DialogWasShown();
+                return;
+            }
+
+            data.AppHasOpened();
+
+            if (_configuration.OpenCriteria != null && _configuration.OpenCriteria.Any())
+            {
+                data.DialogWasShown = _configuration.OpenCriteria.All(x => x.ShouldOpen(data));
+            }
+
+            _dataService.SaveData(data);
+
+            if (data.DialogWasShown)
+            {
                 _userInteraction.ShowDialog(_configuration.DialogBody, _configuration.DialogTitle,
                     _configuration.HateItButtonText, _configuration.LoveItButtonText, HandleHateIt, HandleLoveIt);
-			}
+            }
 		}
 
         /// <summary>
@@ -48,7 +64,7 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
         /// <remarks>This is primarily meant for testing and could annoy users if you use it in a real app</remarks>
         public void ResetOpenCount()
         {
-            _dataService.ResetAppCount();
+            _dataService.SaveData(new FeedbackData());
         }
 
         /// <summary>

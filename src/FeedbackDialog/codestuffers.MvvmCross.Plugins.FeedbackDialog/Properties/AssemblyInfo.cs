@@ -17,3 +17,4 @@ using System.Runtime.InteropServices;
 [assembly: NeutralResourcesLanguage("en")]
 
 [assembly: InternalsVisibleTo("codestuffers.MvvmCross.Plugins.FeedbackDialog.Tests")]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]

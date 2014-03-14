@@ -16,7 +16,7 @@
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
-    <ProductVersion>10.0.0</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -41,6 +41,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\IFinishOpenDialogCriteriaBuilder.cs" />
+    <Compile Include="Configuration\IOpenDialogAfterNumberOfOpensCriteriaBuilder.cs" />
+    <Compile Include="Configuration\IOpenDialogAfterTimeUsedCrtieriaBuilder.cs" />
+    <Compile Include="Configuration\IOpenDialogCriteriaBuilder.cs" />
+    <Compile Include="Configuration\OpenDialogCriteriaBuilder.cs" />
     <Compile Include="FeedbackAction.cs" />
     <Compile Include="FeedbackData.cs" />
     <Compile Include="FeedbackDataService.cs" />
@@ -48,6 +53,7 @@
     <Compile Include="IFeedbackDataService.cs" />
     <Compile Include="IMvxFeedbackDialog.cs" />
     <Compile Include="MvxFeedbackDialog.cs" />
+    <Compile Include="OpenCriteria\OpenDialog.cs" />
     <Compile Include="OpenCriteria\TimeUsedCriteria.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

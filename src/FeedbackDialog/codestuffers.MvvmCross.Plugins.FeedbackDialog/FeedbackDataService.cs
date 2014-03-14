@@ -24,48 +24,10 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
         }
 
         /// <summary>
-        /// Register an opening of the app
-        /// </summary>
-        /// <param name="maxNumberOfOpens">Number of times the app is required to open before the dialog is shown</param>
-        /// <returns>Returns the action that should be taken by the dialog</returns>
-        public FeedbackAction AppWasOpened(int maxNumberOfOpens)
-        {
-            var data = GetData();
-
-            if (data.DialogWasShown)
-            {
-                return FeedbackAction.Nothing;
-            }
-
-            data.AppHasOpened();
-            SaveData(data);
-
-            return data.ShouldOpenDialog(maxNumberOfOpens) ? FeedbackAction.OpenDialog : FeedbackAction.Nothing;
-        }
-
-        /// <summary>
-        /// Tracks that the dialog was shown
-        /// </summary>
-        public void DialogWasShown()
-        {
-            var data = GetData();
-            data.DialogWasShown = true;
-            SaveData(data);
-        }
-
-        /// <summary>
-        /// Resets the number of times the app has been opened
-        /// </summary>
-        public void ResetAppCount()
-        {
-            _fileStore.DeleteFile(DataFileName);
-        }
-
-        /// <summary>
         /// Gets the data from the file system
         /// </summary>
         /// <returns>An instance of the saved data, or a new instance if none had been saved</returns>
-        private FeedbackData GetData()
+        public FeedbackData GetData()
         {
             string feedbackDataBuffer;
 
@@ -78,7 +40,7 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
         /// Saves the data to the file system.
         /// </summary>
         /// <param name="feedbackData">Data that should be saved</param>
-        private void SaveData(FeedbackData feedbackData)
+        public void SaveData(FeedbackData feedbackData)
         {
             _fileStore.WriteFile(DataFileName, _jsonConverter.SerializeObject(feedbackData));
         }

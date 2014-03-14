@@ -1,4 +1,8 @@
-﻿using Cirrious.CrossCore.Plugins;
+﻿using System.Collections;
+using System.Collections.Generic;
+using Cirrious.CrossCore.Plugins;
+using codestuffers.MvvmCross.Plugins.FeedbackDialog.Configuration;
+using codestuffers.MvvmCross.Plugins.FeedbackDialog.OpenCriteria;
 
 namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
 {
@@ -7,6 +11,8 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
     /// </summary>
     public class FeedbackDialogConfiguration : IMvxPluginConfiguration
     {
+        private IFinishOpenDialogCriteriaBuilder _openDialogCriteria;
+
         /// <summary>
         /// Creates a new instance of FeedbackDialogConfiguration
         /// </summary>
@@ -18,7 +24,7 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
             DialogBody = "What do you think of the app so far?";
             LoveItButtonText = "Love it!";
             HateItButtonText = "Hate it...";
-            ShowFeedbackAfterApplicationOpenCount = 3;
+            OpenDialogCriteria = OpenDialog.After.NumberOfOpens(3);
         }
 
         /// <summary>
@@ -61,9 +67,16 @@ namespace codestuffers.MvvmCross.Plugins.FeedbackDialog
         /// </summary>
         public string FeedbackBody { get; set; }
 
-        /// <summary>
-        /// Number of times the app should be opened before showing the feedback dialog
-        /// </summary>
-        public int ShowFeedbackAfterApplicationOpenCount { get; set; }
+        public IFinishOpenDialogCriteriaBuilder OpenDialogCriteria
+        {
+            get { return _openDialogCriteria; }
+            set
+            {
+                _openDialogCriteria = value;
+                OpenCriteria = (value as OpenDialogCriteriaBuilder).OpenDialogCriteria;
+            }
+        }
+
+        internal IEnumerable<IOpenDialogCriteria> OpenCriteria { get; set; }
     }
 }

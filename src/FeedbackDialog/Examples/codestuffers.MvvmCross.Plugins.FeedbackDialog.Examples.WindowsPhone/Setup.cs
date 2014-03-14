@@ -4,6 +4,7 @@ using Cirrious.CrossCore.Plugins;
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.WindowsPhone.Platform;
 using codestuffers.MvvmCross.Plugins.FeedbackDialog;
+using codestuffers.MvvmCross.Plugins.FeedbackDialog.OpenCriteria;
 using Microsoft.Phone.Controls;
 
 namespace FeedbackDialog.Examples.WindowsPhone
@@ -32,7 +33,8 @@ namespace FeedbackDialog.Examples.WindowsPhone
                 return new FeedbackDialogConfiguration
                 {
                     ApplicationReviewUrl = "https://www.github.com",
-                    FeedbackEmailAddress = "info@example.com"
+                    FeedbackEmailAddress = "info@example.com",
+                    OpenDialogCriteria = OpenDialog.After.NumberOfOpens(3)
                 };
             }
 
