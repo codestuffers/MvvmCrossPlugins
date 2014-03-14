@@ -48,6 +48,7 @@
     <Compile Include="IFeedbackDataService.cs" />
     <Compile Include="IMvxFeedbackDialog.cs" />
     <Compile Include="MvxFeedbackDialog.cs" />
+    <Compile Include="OpenCriteria\TimeUsedCriteria.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="..\VersionInfo.cs">
@@ -100,7 +101,5 @@
       <Name>codestuffers.MvvmCross.Plugins.UserInteraction</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OpenCriteria\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

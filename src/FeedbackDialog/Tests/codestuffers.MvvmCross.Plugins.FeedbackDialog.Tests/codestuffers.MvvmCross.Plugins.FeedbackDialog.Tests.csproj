@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OpenCriteria\RequiredOpensCriteriaTests.cs" />
+    <Compile Include="OpenCriteria\TimeUsedCriteriaTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
